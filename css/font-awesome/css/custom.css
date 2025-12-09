@@ -1,0 +1,47 @@
+/* Fondo general del sitio */
+body {
+  background-color: #020617; /* casi negro azulado */
+}
+
+/* Header donde está tu foto y el texto GAME DEVELOPER */
+header {
+  background-color: #111827; /* gris muy oscuro */
+}
+
+/* Navbar superior */
+.navbar-default {
+  background-color: #020617;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #e5e7eb; /* gris claro */
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #34d399;          /* verde acento */
+  background-color: transparent;
+}
+
+/* Botones principales en verde */
+.btn-success,
+.btn-primary,
+.btn-default.btn-xl {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-default.btn-xl:hover {
+  background-color: #159f82;
+  border-color: #159f82;
+}
