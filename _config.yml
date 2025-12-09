@@ -3,6 +3,12 @@ description: "Senior Unity Developer Portfolio"
 url: "https://danohuescaunity.github.io"
 baseurl: ""
 
+color:
+  primary: 1abc9c        # verde azulado
+  primary-rgb: "26,188,156"
+  secondary: 111827      # casi negro (tipo Tailwind gray-900)
+  secondary-dark: 020617
+
 markdown: kramdown
 permalink: pretty
 email: "tu-correo@dominio.com"
