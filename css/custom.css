@@ -45,3 +45,15 @@ header {
   background-color: #159f82;
   border-color: #159f82;
 }
+
+header img,
+header .img-responsive,
+header .img-profile,
+.hero-avatar {
+  width: 220px;        /* ajusta el tamaño a gusto: 180, 200, etc. */
+  height: 220px;
+  border-radius: 50%;  /* redonda */
+  object-fit: cover;   /* recorta sin deformar */
+  display: block;
+  margin: 0 auto 24px; /* centrada + espacio abajo */
+}
