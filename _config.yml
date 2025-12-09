@@ -1,16 +1,15 @@
 title: "Luis Huesca"
-description: "Senior Unity Developer"
-url: "https://danohuescaunity.github.io"
-baseurl: ""   # MUY importante: vacío para repos tipo usuario.github.io
+description: "Senior Unity Developer Portfolio"
+
+url: "https://danohuescaunity.github.io"  # ojo: tu nuevo dominio de Pages
+baseurl: ""                               # vacío porque es repo tipo usuario.github.io
 
 remote_theme: jeromelachaud/freelancer-theme
 
 plugins:
   - jekyll-remote-theme
 
-# Datos del contacto del tema
-email: "tu-correo@dominio.com"
-
-# Opcional, pero útil:
 markdown: kramdown
 permalink: pretty
+
+email: "tu-correo@dominio.com"
