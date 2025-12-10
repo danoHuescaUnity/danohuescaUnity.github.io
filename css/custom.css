@@ -18,8 +18,9 @@ header {
    ========================= */
 
 .navbar-default {
-  background-color: #020617;
-  border-color: transparent;
+  background-color: #0b1120;
+  border-color: #020617;
+  box-shadow: 0 2px 0 rgba(15, 23, 42, 0.9);
 }
 
 .navbar-default .navbar-brand {
@@ -59,30 +60,35 @@ header .img-profile,
    TÍTULOS SECCIÓN + ESTRELLITAS
    ========================= */
 
+/* Títulos */
 #portfolio h2,
 #about h2,
 #contact h2 {
   color: #f9fafb;
 }
 
-/* Portfolio & Contact – línea con estrella */
-#portfolio .star-primary,
-#contact .star-primary {
-  border-color: #f9fafb;
-}
-
-#portfolio .star-primary:after,
-#contact .star-primary:after {
-  background-color: #f9fafb;
-}
-
-/* About – línea con estrella clara */
+/* Línea + estrella versión "clara" (About, fondo oscuro) */
+hr.star-light,
 #about .star-light {
   border-color: #f9fafb;
 }
 
+hr.star-light:after,
 #about .star-light:after {
   background-color: #f9fafb;
+}
+
+/* Línea + estrella versión "primaria" (Portfolio / Contact) */
+hr.star-primary,
+#portfolio .star-primary,
+#contact .star-primary {
+  border-color: #f9fafb;      /* blanco / gris claro */
+}
+
+hr.star-primary:after,
+#portfolio .star-primary:after,
+#contact .star-primary:after {
+  background-color: #f9fafb;  /* blanco / gris claro */
 }
 
 /* =========================
