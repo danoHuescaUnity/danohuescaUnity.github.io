@@ -203,3 +203,7 @@ video.portfolio-thumb-media{
    object-fit: contain;
    background-color: #000;
 }
+video.portfolio-thumb-media-zoom{
+   object-fit: cover;
+   transform-origin: center;
+}
