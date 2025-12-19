@@ -228,3 +228,12 @@ video.portfolio-thumb-media-zoom{
   top: 20px;
   right: 20px;
 }
+.project-highlights {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.project-highlights li {
+  margin-bottom: 6px;
+}
