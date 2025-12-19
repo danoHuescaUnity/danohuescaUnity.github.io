@@ -32,10 +32,14 @@
             {% endif %}
 
             {% if modal_video != "" %}
-              <video class="img-responsive img-centered portfolio-video" controls>
-                <source src="{{ "/video/" | append: modal_video | prepend: site.baseurl }}" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+             <video class="img-responsive img-centered portfolio-video"
+                   controls
+                   autoplay
+                   muted
+                   playsinline>
+              <source src="{{ "/video/" | append: modal_video | prepend: site.baseurl }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             {% else %}
               <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
             {% endif %}
