@@ -5,7 +5,10 @@ title: "Adventure Chef"
 date: 2014-07-18
 alt: image-alt
 project-date: April 2014
-client: Start Bootstrap
+client: Metamoki
+role: Senior Unity Game Developer
+plataforms: iOS,Android
+engine: Unity(C#)
 category: Game Development
 video_thumb: "AC_ShortCut.mp4"
 video_modal: "AC_LongCut.mp4"
