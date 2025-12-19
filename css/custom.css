@@ -220,3 +220,11 @@ video.portfolio-thumb-media-zoom{
 .portfolio-modal .modal-body .item-details li {
   color: #e5e7eb;
 }
+/* ====== MODAL PORTFOLIO: BOTÓN X MÁS PEQUEÑO ====== */
+
+.portfolio-modal .close-modal {
+  transform: scale(0.6);     /* reduce tamaño de la X */
+  transform-origin: top right;
+  top: 20px;
+  right: 20px;
+}
