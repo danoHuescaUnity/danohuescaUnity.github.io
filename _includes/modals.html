@@ -46,7 +46,13 @@
             {% endif %}
 
             <p>{{ post.description }}</p>
-
+            {% if post.highlights %}
+            <ul class="project-highlights text-left">
+              {% for item in post.highlights %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
            <ul class="list-inline item-details">
             {% if post.client %}
             <li>Company:
