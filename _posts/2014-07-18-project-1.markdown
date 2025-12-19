@@ -14,4 +14,8 @@ video_thumb: "AC_ShortCut.mp4"
 video_modal: "AC_LongCut.mp4"
 video_zoom_scale: 1.3
 description: Mobile cooking idle game where players manage a restaurant
+highlights:
+  - Implemented and iterated on core kitchen and order-management gameplay systems.
+  - Integrated new live-ops features (events, offers, quests) to improve retention and monetization.
+  - Profiled and optimized performance to keep stable FPS on mid and low-end Android devices.
 ---
