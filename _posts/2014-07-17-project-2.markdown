@@ -3,21 +3,22 @@ layout: default
 modal-id: 2
 title: "EverMerge"
 date: 2014-07-17
-alt: image-alt
-project-date: April 2014
+alt: "EverMerge"
+project-date: 2022–2023
 client: Nvizzio
-category: Senior Unity Developer
-plataforms: iOS,Android
+role: "Senior Unity Developer"
+platforms: "iOS, Android"
 engine: "Unity (C#)"
-category: Game Development
+category: "Live Ops / UI / A/B Testing"
+img: "cake.png"
 video_thumb: "EM_Short.mp4"
 video_modal: "EM_LongCut.mp4"
 description: "As a Senior Unity Developer, I supported a large-scale live game by delivering seasonal live-ops events and polish-focused improvements: from implementing event logic and currency/data handling to crafting UI animations, VFX, and running A/B tests to validate iterations. I also improved overall stability by fixing production bugs and elevating visual quality to make the experience feel more refined and cohesive."
 highlights:
-- "Implemented and maintained seasonal live-ops events, including event flow logic and content updates."
-- "Built UI animations and integrated VFX to improve feedback, clarity, and overall presentation."
-- "Worked with currency and economy-related data, ensuring consistency and reliability across features."
-- "Supported A/B testing to evaluate variations and iterate quickly based on results."
-- "Fixed bugs and delivered visual polish improvements to enhance perceived quality and reduce friction."
-- "Collaborated closely with designers, 2D artists, and backend developers to ship features smoothly."
+  - "Implemented and maintained seasonal live-ops events, including event flow logic and content updates."
+  - "Built UI animations and integrated VFX to improve feedback, clarity, and overall presentation."
+  - "Worked with currency and economy-related data, ensuring consistency and reliability across features."
+  - "Supported A/B testing to evaluate variations and iterate quickly based on results."
+  - "Fixed bugs and delivered visual polish improvements to enhance perceived quality and reduce friction."
+  - "Collaborated closely with designers, 2D artists, and backend developers to ship features smoothly."
 ---
