@@ -35,3 +35,23 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).on('shown.bs.modal', '.portfolio-modal', function () {
+  $(this).find('video').each(function () {
+    try {
+      this.muted = false;
+      this.playsInline = true;
+      this.play().catch(function(){});
+    } catch (e) {}
+  });
+});
+
+// Pause (and optionally reset) videos when closing portfolio modals
+$(document).on('hidden.bs.modal', '.portfolio-modal', function () {
+  $(this).find('video').each(function () {
+    try {
+      this.pause();
+      this.currentTime = 0;
+    } catch (e) {}
+  });
+});
