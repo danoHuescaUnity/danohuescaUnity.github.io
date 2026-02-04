@@ -3,7 +3,6 @@ layout: default
 modal-id: 2
 title: "EverMerge"
 date: 2014-07-17
-img: cake.png
 alt: image-alt
 project-date: April 2014
 client: Nvizzio
@@ -11,7 +10,7 @@ category: Senior Unity Developer
 plataforms: iOS,Android
 engine: "Unity (C#)"
 category: Game Development
-video_thumb: "AC_ShortCut.mp4"
+video_thumb: "EM_Short.mp4"
 video_modal: "EM_LongCut.mp4"
 description: As a Senior Unity Developer, I supported a large-scale live game by delivering seasonal live-ops events and polish-focused improvements: from implementing event logic and currency/data handling to crafting UI animations, VFX, and running A/B tests to validate iterations. I also improved overall stability by fixing production bugs and elevating visual quality to make the experience feel more refined and cohesive.
 highlights:
