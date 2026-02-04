@@ -1,90 +1,125 @@
 {% for post in site.posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
+    <div class="close-modal" data-dismiss="modal" aria-label="Close modal">
       <div class="lr">
         <div class="rl"></div>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
+
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
 
             {%- comment -%}
-              Elegir qué video usar en el modal, en este orden:
+              Media selection order:
               1) video_modal
               2) video
               3) video_thumb
-              Si no hay ninguno, mostrar imagen.
+              Otherwise show image (img/portfolio/{post.img})
+
+              Video fields can be:
+              - Full URL: https://...
+              - Site-root path: /video/my.mp4
+              - Filename only: my.mp4 (resolved under /video/)
             {%- endcomment -%}
 
-            {% assign modal_video = "" %}
+            {% assign media_video = "" %}
 
             {% if post.video_modal %}
-              {% assign modal_video = post.video_modal %}
+              {% assign media_video = post.video_modal %}
             {% elsif post.video %}
-              {% assign modal_video = post.video %}
+              {% assign media_video = post.video %}
             {% elsif post.video_thumb %}
-              {% assign modal_video = post.video_thumb %}
+              {% assign media_video = post.video_thumb %}
             {% endif %}
 
-            {% if modal_video != "" %}
-             <video class="img-responsive img-centered portfolio-video"
-                   controls
-                   autoplay
-                   muted
-                   loop
-                   playsinline>
-              <source src="{{ "/video/" | append: modal_video | prepend: site.baseurl }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            {%- comment -%} Your videos folder {%- endcomment -%}
+            {% assign default_video_folder = "/video/" %}
+
+            {% if media_video != "" %}
+
+              {% assign video_src = media_video %}
+
+              {% if video_src contains "://" %}
+                {%- comment -%} absolute URL - use as is {%- endcomment -%}
+              {% elsif video_src startswith "/" %}
+                {%- comment -%} site-root path - respect baseurl via relative_url {%- endcomment -%}
+                {% assign video_src = video_src | relative_url %}
+              {% else %}
+                {%- comment -%} filename only - prefix with /video/ and respect baseurl {%- endcomment -%}
+                {% assign video_src = default_video_folder | append: video_src | relative_url %}
+              {% endif %}
+
+              <video class="img-responsive img-centered portfolio-video"
+                     controls
+                     playsinline
+                     preload="metadata">
+                <source src="{{ video_src }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
             {% else %}
-              <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+
+              {% if post.img %}
+                <img src="{{ '/img/portfolio/' | append: post.img | relative_url }}"
+                     class="img-responsive img-centered"
+                     alt="{{ post.alt }}">
+              {% endif %}
+
             {% endif %}
 
-            <p>{{ post.description }}</p>
+            {% if post.description %}
+              <p>{{ post.description }}</p>
+            {% endif %}
+
             {% if post.highlights %}
-            <ul class="project-highlights text-left">
-              {% for item in post.highlights %}
-              <li>{{ item }}</li>
-              {% endfor %}
+              <ul class="project-highlights text-left">
+                {% for item in post.highlights %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
+            <ul class="list-inline item-details">
+              {% if post.client %}
+                <li>Company:
+                  <strong>{{ post.client }}</strong>
+                </li>
+              {% endif %}
+
+              {% if post.role %}
+                <li>Role:
+                  <strong>{{ post.role }}</strong>
+                </li>
+              {% endif %}
+
+              {% if post.platforms %}
+                <li>Platforms:
+                  <strong>{{ post.platforms }}</strong>
+                </li>
+              {% endif %}
+
+              {% if post.engine %}
+                <li>Engine:
+                  <strong>{{ post.engine }}</strong>
+                </li>
+              {% endif %}
             </ul>
-            {% endif %}
-           <ul class="list-inline item-details">
-            {% if post.client %}
-            <li>Company:
-              <strong>{{ post.client }}</strong>
-            </li>
-            {% endif %}
-          
-            {% if post.role %}
-            <li>Role:
-              <strong>{{ post.role }}</strong>
-            </li>
-            {% endif %}
-          
-            {% if post.platforms %}
-            <li>Platforms:
-              <strong>{{ post.platforms }}</strong>
-            </li>
-            {% endif %}
-          
-            {% if post.engine %}
-            <li>Engine:
-              <strong>{{ post.engine }}</strong>
-            </li>
-            {% endif %}
-          </ul>
+
             <button type="button" class="btn btn-default" data-dismiss="modal">
               <i class="fa fa-times"></i> Close
             </button>
+
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 {% endfor %}

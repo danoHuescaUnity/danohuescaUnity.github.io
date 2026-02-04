@@ -1,18 +1,17 @@
 ---
 layout: default
 modal-id: 2
-title: "Adventure Chef"
-date: 2014-07-18
+title: "EverMerge"
+date: 2014-07-17
 alt: image-alt
 project-date: April 2014
-client: Metamoki
-role: Senior Unity Game Developer
-platforms: iOS,Android
-engine: "Unity(C#)"
+client: Nvizzio
+category: Senior Unity Developer
+plataforms: iOS,Android
+engine: "Unity (C#)"
 category: Game Development
-video_thumb: "AC_ShortCut.mp4"
-video_modal: "AC_LongCut.mp4"
-video_zoom_scale: 1.3
+video_thumb: "EM_Short.mp4"
+video_modal: "EM_LongCut.mp4"
 description: As a Senior Unity Developer, I supported a large-scale live game by delivering seasonal live-ops events and polish-focused improvements: from implementing event logic and currency/data handling to crafting UI animations, VFX, and running A/B tests to validate iterations. I also improved overall stability by fixing production bugs and elevating visual quality to make the experience feel more refined and cohesive.
 highlights:
  -Implemented and maintained seasonal live-ops events, including event flow logic and content updates.
