@@ -38,16 +38,16 @@
               {% assign media_video = post.video_thumb %}
             {% endif %}
 
-            {%- comment -%} Your videos folder {%- endcomment -%}
             {% assign default_video_folder = "/video/" %}
 
             {% if media_video != "" %}
 
               {% assign video_src = media_video %}
+              {% assign first_char = video_src | slice: 0, 1 %}
 
               {% if video_src contains "://" %}
                 {%- comment -%} absolute URL - use as is {%- endcomment -%}
-              {% elsif video_src startswith "/" %}
+              {% elsif first_char == "/" %}
                 {%- comment -%} site-root path - respect baseurl via relative_url {%- endcomment -%}
                 {% assign video_src = video_src | relative_url %}
               {% else %}
