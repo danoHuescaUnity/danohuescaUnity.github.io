@@ -1,0 +1,30 @@
+---
+layout: default
+modal-id: 5
+title: "Broken Gods"
+date: 2014-07-17
+alt: "Broken Gods"
+project-date: 2022–2023
+client: Eon Reality
+role: "Unity Developer"
+platforms: "Oculus,SteamVR"
+engine: "Unity (C#)"
+category: "VR Game / Multiplayer / Online"
+img: "cake.png"
+video_thumb: "BrokenGods_ShortCut.mp4"
+video_modal: "BrokenGods_LongCut.mp4"
+description:
+  "Broken Gods is an online multiplayer VR shooter built around in-house hardware,
+  including a custom treadmill locomotion system and proprietary VR rifles.
+  As a Unity Developer and acting project lead/PM,
+  I translated ambitious creative and technical goals into a shippable plan: defining scope,
+  setting priorities, and managing timelines while implementing key VR gameplay systems.
+  My work focused on ensuring the experience felt responsive, immersive,
+  and production-feasible across a complex stack of networking + bespoke devices."
+highlights:
+  - "Implemented core VR gameplay interactions and shooter mechanics, aligning feel and responsiveness with the custom rifle controllers."
+  - "Supported integration and iteration with in-house hardware (treadmill locomotion + proprietary peripherals), balancing immersion, comfort, and technical constraints."
+  - "Contributed to multiplayer/online gameplay implementation and testing, focusing on stability and consistent player experience."
+  - "Owned scope and prioritization: translating ideas into feasible milestones, cutting/adjusting features when needed, and keeping delivery on track."
+  - "Coordinated closely with creatives and engineers to align vision, timelines, and technical execution."
+---

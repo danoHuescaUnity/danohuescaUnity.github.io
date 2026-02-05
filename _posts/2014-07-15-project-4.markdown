@@ -9,7 +9,7 @@ client: Eon Reality
 role: "Unity Developer"
 platforms: "Oculus,SteamVR"
 engine: "Unity (C#)"
-category: "Live Ops / UI / A/B Testing"
+category: "VR Experience"
 img: "cake.png"
 video_thumb: "TrueDown_ShortCut.mp4"
 video_modal: "TrueDown_LongCut.mp4"
