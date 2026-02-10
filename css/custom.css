@@ -233,7 +233,8 @@ video.portfolio-thumb-media-zoom{
 
 .portfolio-modal .modal-body p,
 .portfolio-modal .modal-body .item-details li {
-  font-size: clamp(1rem, 0.96rem + 0.25vw, 1.12rem);
+  /* 20% larger than their inherited size */
+  font-size: 1.2em;
   line-height: 1.6;
 }
 /* ====== MODAL PORTFOLIO: BOTÓN X MÁS PEQUEÑO ====== */
@@ -336,7 +337,8 @@ video.portfolio-thumb-media-zoom{
 #portfolio .portfolio-card-highlights li {
   position: relative;
   padding-left: 20px;
-  font-size: clamp(0.98rem, 0.94rem + 0.25vw, 1.08rem);
+  /* base was 0.9rem → +20% ≈ 1.08rem */
+  font-size: 1.08rem;
   line-height: 1.5;
   margin-bottom: 6px;
 }
@@ -499,7 +501,8 @@ video.portfolio-thumb-media-zoom{
   padding-left: 18px;
   margin-bottom: 8px;
   color: #e5e7eb;
-  font-size: clamp(0.98rem, 0.94rem + 0.25vw, 1.08rem);
+  /* base was 0.92rem → +20% ≈ 1.10rem */
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -529,7 +532,8 @@ video.portfolio-thumb-media-zoom{
   background: rgba(30, 58, 138, 0.20);
   border: 1px solid rgba(59, 130, 246, 0.22);
   color: #e5e7eb;
-  font-size: 0.75rem;
+  /* base was 0.75rem → +20% = 0.9rem */
+  font-size: 0.9rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
