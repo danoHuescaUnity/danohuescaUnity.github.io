@@ -29,14 +29,19 @@ header {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #e5e7eb;
+  color: #f9fafb; /* match section titles */
 }
 
 .navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #e5e7eb; /* subtle dim on hover, not green */
+  background-color: transparent;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #22c55e;
+  color: #22c55e; /* green accent only when active/scrollspy */
   background-color: transparent;
 }
 
@@ -163,12 +168,12 @@ footer .footer-below {
   color: #020617;
 }
 
-#page-top a {
+section a {
   color: #15803d;
 }
 
-#page-top a:hover,
-#page-top a:focus {
+section a:hover,
+section a:focus {
   color: #166534;
 }
 
