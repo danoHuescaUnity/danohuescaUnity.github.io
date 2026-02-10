@@ -158,13 +158,13 @@ footer .footer-below {
   color: #020617;
 }
 
-a {
-  color: #22c55e;
+#page-top a {
+  color: #15803d;
 }
 
-a:hover,
-a:focus {
-  color: #16a34a;
+#page-top a:hover,
+#page-top a:focus {
+  color: #166534;
 }
 
 /* =========================
