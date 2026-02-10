@@ -93,6 +93,11 @@ hr.star-primary:after {
   color: #f9fafb;
 }
 
+#skills.skills-section {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
 #contact {
   background-color: #020617;
   color: #e5e7eb;
@@ -375,4 +380,60 @@ video.portfolio-thumb-media-zoom{
 #portfolio .portfolio-card-cta:hover {
   background: linear-gradient(135deg, #16a34a, #15803d);
   color: #020617;
+}
+
+/* =========================
+   SKILLS SECTION
+   ========================= */
+
+.skills-section {
+  padding: 100px 0;
+}
+
+.skills-section h2 {
+  color: #f9fafb;
+}
+
+.skills-grid {
+  margin-top: 20px;
+}
+
+.skills-card {
+  background: radial-gradient(circle at top, #111827, #020617 60%);
+  border-radius: 16px;
+  padding: 18px 20px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.65);
+}
+
+.skills-card-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #f9fafb;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 6px;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  font-size: 0.8rem;
+  color: #e5e7eb;
+}
+
+@media (max-width: 767px) {
+  .skills-section {
+    padding: 75px 0;
+  }
 }
