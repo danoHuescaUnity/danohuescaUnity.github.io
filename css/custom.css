@@ -314,13 +314,13 @@ video.portfolio-thumb-media-zoom{
 }
 
 #portfolio .portfolio-card-title {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin-bottom: 6px;
   color: #f9fafb;
 }
 
 #portfolio .portfolio-card-meta {
-  font-size: 0.85rem;
+  font-size: 1.0rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #9ca3af;
@@ -338,8 +338,8 @@ video.portfolio-thumb-media-zoom{
   position: relative;
   padding-left: 20px;
   /* base was 0.9rem → +20% ≈ 1.08rem */
-  font-size: 1.08rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.6;
   margin-bottom: 6px;
 }
 
@@ -368,7 +368,7 @@ video.portfolio-thumb-media-zoom{
   border-radius: 999px;
   background: rgba(15, 23, 42, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.35);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #e5e7eb;
@@ -385,7 +385,7 @@ video.portfolio-thumb-media-zoom{
   border-radius: 999px;
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #020617;
-  font-size: 0.85rem;
+  font-size: 1.0rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
