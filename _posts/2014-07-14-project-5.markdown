@@ -13,6 +13,7 @@ category: "VR Game / Multiplayer / Online"
 img: "cake.png"
 video_thumb: "BrokenGods_ShortCut.mp4"
 video_modal: "BrokenGods_LongCut.mp4"
+card_description: "Built core gameplay and multiplayer features for a VR shooter with custom hardware (treadmill + rifles), while managing scope and priorities with the team."
 description:
   "Broken Gods is an online multiplayer VR shooter built around in-house hardware,
   including a custom treadmill locomotion system and proprietary VR rifles.

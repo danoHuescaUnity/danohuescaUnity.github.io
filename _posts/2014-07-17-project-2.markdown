@@ -13,6 +13,7 @@ category: "Live Ops / UI / A/B Testing"
 img: "cake.png"
 video_thumb: "EM_Short.mp4"
 video_modal: "EM_LongCut.mp4"
+card_description: "Worked on live-ops events and feature updates in Unity, improving UI/VFX integration and stability for a large-scale mobile game."
 description: "As a Senior Unity Developer, I supported a large-scale live game by delivering seasonal live-ops events and polish-focused improvements: from implementing event logic and currency/data handling to crafting UI animations, VFX, and running A/B tests to validate iterations. I also improved overall stability by fixing production bugs and elevating visual quality to make the experience feel more refined and cohesive."
 highlights:
   - "Implemented and maintained seasonal live-ops events, including event flow logic and content updates."

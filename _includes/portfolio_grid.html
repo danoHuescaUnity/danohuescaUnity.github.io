@@ -50,13 +50,10 @@
                 {% if post.category %}{{ post.category }}{% endif %}
               </p>
               {% endif %}
-
-              {% if post.highlights %}
-              <ul class="portfolio-card-highlights">
-                {% for item in post.highlights limit:3 %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-              </ul>
+              
+              {% assign card_text = post.card_description | default: post.description%}
+              {% if card_text %}
+              <p class="portfolio-card-description">{{ card_text }}</p>
               {% endif %}
 
               <div class="portfolio-card-tags">

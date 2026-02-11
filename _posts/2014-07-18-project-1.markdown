@@ -12,6 +12,7 @@ engine: "Unity(C#)"
 category: Game Development
 video_thumb: "AC_ShortCut.mp4"
 video_modal: "AC_LongCut.mp4"
+card_description: "Built and shipped gameplay systems and live features in Unity for iOS/Android, focusing on smooth UX, performance, and scalable content updates."
 description: "As a Senior Unity Game Developer, I owned client-side development for core gameplay and live-ops features: from implementing restaurant systems and UI flows to optimizing performance and supporting designers with tools and iteration."
 highlights:
   - Implemented core kitchen and order-management systems, including customers, queues, recipes and upgrades.

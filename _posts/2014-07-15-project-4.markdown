@@ -13,6 +13,7 @@ category: "VR Experience"
 img: "cake.png"
 video_thumb: "TrueDown_ShortCut.mp4"
 video_modal: "TrueDown_LongCut.mp4"
+card_description: "Developed VR interactions, animations, and VFX for a story-driven horror experience, helping shape scope and technical decisions during production."
 description: "As a Unity Developer (and acting as a lightweight project lead/PM), I helped bring TrueDown to life: a VR horror narrative set in an abandoned building where a ritual went wrong. I translated creative intent into shippable VR gameplay by defining what was feasible, prioritizing scope, and implementing the core interactive moments—combining VR interactions, in-world animations, and VFX to deliver tension, pacing, and immersion across headsets."
 highlights:
   - "Implemented VR interactions (object handling, in-world triggers, and player-driven moments) to suppor the narrative flow."

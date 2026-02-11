@@ -13,6 +13,7 @@ category: "Live Ops / UI / A/B Testing"
 img: "cake.png"
 video_thumb: "Bingo_ShortCut.mp4"
 video_modal: "Bingo_LongCut.mp4"
+card_description: "Designed and implemented the Bingo mini-game end-to-end in Unity, including gameplay flow, data handling, animations, and VFX."
 description: "As a Unity Developer, I owned the end-to-end delivery of a Bingo mini-game inside Slotsburg: from core gameplay implementation and game data handling (balls, state, progression/rewards) to defining and polishing the UI animations and VFX that make the moment-to-moment experience feel satisfying. I worked across gameplay, presentation, and integration to ship a cohesive feature that fits seamlessly within the main game loop."
 highlights:
   - "Implemented the full Bingo gameplay loop (earning balls, drawing/using balls, matching numbers, and completing Bingo states)."

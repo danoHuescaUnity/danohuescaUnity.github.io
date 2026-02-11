@@ -327,31 +327,12 @@ video.portfolio-thumb-media-zoom{
   margin-bottom: 10px;
 }
 
-/* Highlights list with check-style bullets */
-#portfolio .portfolio-card-highlights {
-  list-style: none;
-  padding: 0;
+/* Portfolio card description text */
+#portfolio .portfolio-card-description {
   margin: 0 0 12px;
-}
-
-#portfolio .portfolio-card-highlights li {
-  position: relative;
-  padding-left: 20px;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  margin-bottom: 6px;
-  color: #E5E7EB;
-}
-
-#portfolio .portfolio-card-highlights li::before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 2px;
   font-size: 1.2rem;
-  color: #22c55e;
+  line-height: 1.5;
+  color: #e5e7eb;
 }
 
 /* Tags row at the bottom of the card */
