@@ -1,33 +1,34 @@
 <article class="project-card" data-category="{{ include.project.category }}" data-project="{{ include.project.id }}">
   <div class="project-card__media">
-    {% if include.project.video %}
-    <video class="project-card__video" autoplay muted loop playsinline poster="{{ include.project.thumb | relative_url }}">
-      <source src="{{ include.project.video | relative_url }}" type="video/mp4">
-    </video>
+    {% if include.project.video and include.project.video != "" %}
+      <video
+        class="project-card__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="{{ include.project.thumb | relative_url }}"
+      >
+        <source src="{{ include.project.video | relative_url }}" type="video/mp4">
+      </video>
     {% else %}
-    <img class="project-card__thumb" src="{{ include.project.thumb | relative_url }}" alt="{{ include.project.title }}" loading="lazy">
+      <img
+        class="project-card__thumb"
+        src="{{ include.project.thumb | relative_url }}"
+        alt="{{ include.project.title }}"
+        loading="lazy"
+      >
     {% endif %}
+
     <div class="project-card__overlay">
       <button class="btn btn--outline btn--sm project-card__btn" data-modal="{{ include.project.id }}">
         View Details
       </button>
     </div>
   </div>
+
   <div class="project-card__content">
-    <h3 class="project-card__title">{{ include.project.title }}</h3>
-    <p class="project-card__meta">
-      <span class="project-card__company">{{ include.project.company }}</span>
-      <span class="project-card__divider">—</span>
-      <span class="project-card__role">{{ include.project.role }}</span>
-    </p>
-    <p class="project-card__desc">{{ include.project.short_desc }}</p>
-    <div class="project-card__tags">
-      {% for platform in include.project.platforms %}
-      <span class="tag tag--platform">{{ platform }}</span>
-      {% endfor %}
-      {% for tech in include.project.tech %}
-      <span class="tag tag--tech">{{ tech }}</span>
-      {% endfor %}
-    </div>
+    ...
   </div>
 </article>

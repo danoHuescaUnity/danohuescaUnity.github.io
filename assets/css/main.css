@@ -1366,3 +1366,43 @@ a:focus-visible {
 .skip-link:focus {
   top: 0;
 }
+
+.project-card__media{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* usa el ratio real de tu grid */
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+}
+
+/* clave: que el video se comporte como un thumbnail */
+.project-card__video,
+.project-card__thumb{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay encima, video abajo */
+.project-card__overlay{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.project-card__media:hover .project-card__overlay{
+  opacity: 1;
+}
+
+/* asegura que el video quede atrás */
+.project-card__video{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
