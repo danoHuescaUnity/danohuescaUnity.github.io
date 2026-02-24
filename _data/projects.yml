@@ -13,8 +13,8 @@
     - Unity
     - C#
   category: mobile
-  video: /assets/projects/adventure-chef/Long.mp4
-  thumb: /assets/projects/adventure-chef/Short.mp4
+  video: /assets/projects/adventure-chef/trailer.mp4
+  thumb: /assets/projects/adventure-chef/thumb.jpg
   screenshots:
     - /assets/projects/adventure-chef/screen1.jpg
     - /assets/projects/adventure-chef/screen2.jpg
@@ -45,8 +45,8 @@
     - Unity
     - C#
   category: mobile
-  video: /assets/projects/evermerge/Long.mp4
-  thumb: /assets/projects/evermerge/Short.mp4
+  video: /assets/projects/evermerge/trailer.mp4
+  thumb: /assets/projects/evermerge/thumb.jpg
   screenshots:
     - /assets/projects/evermerge/screen1.jpg
     - /assets/projects/evermerge/screen2.jpg
@@ -77,8 +77,8 @@
     - Unity
     - C#
   category: mobile
-  video: /assets/projects/bingo/Long.mp4
-  thumb: /assets/projects/bingo/Short.mp4
+  video: /assets/projects/bingo/trailer.mp4
+  thumb: /assets/projects/bingo/thumb.jpg
   screenshots:
     - /assets/projects/bingo/screen1.jpg
     - /assets/projects/bingo/screen2.jpg
@@ -109,8 +109,8 @@
     - Unity
     - C#
   category: vr
-  video: /assets/projects/truedown/Long.mp4
-  thumb: /assets/projects/truedown/Short.mp4
+  video: /assets/projects/truedown/trailer.mp4
+  thumb: /assets/projects/truedown/thumb.jpg
   screenshots:
     - /assets/projects/truedown/screen1.jpg
     - /assets/projects/truedown/screen2.jpg
@@ -140,8 +140,8 @@
     - Unity
     - C#
   category: vr
-  video: /assets/projects/broken-gods/Long.mp4
-  thumb: /assets/projects/broken-gods/Short.mp4
+  video: /assets/projects/broken-gods/trailer.mp4
+  thumb: /assets/projects/broken-gods/thumb.jpg
   screenshots:
     - /assets/projects/broken-gods/screen1.jpg
     - /assets/projects/broken-gods/screen2.jpg
