@@ -1,59 +1,32 @@
-title: "Luis Huesca"
-description: "Senior Unity Developer Portfolio"
+# Site Settings
+title: Luis Huesca
+description: Senior Unity Developer Portfolio
 url: "https://danohuescaunity.github.io"
 baseurl: ""
 
-keywords: "your keywords, separated by commas"
-skills: "Senior Unity Developer - Game Developer"
-meta_author: Luis Huesca
-
-# Google webmaster tools
-google_verify:
-
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-contact: static
-
-email: dano.huesca@gmail.com
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 1abc9c #80B3FF
-  primary-rgb: "26,188,156" #"128,179,255"
-  secondary: 111827 #FD6E8A
-  secondary-dark: 020617 #A2122F
-
-# Footer settings
-footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
-  social: Around the Web
-  credits: Credits
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: github
-    url: https://github.com/danoHuescaUnity
-  - title: linkedin
-    url: https://www.linkedin.com/in/danielhuesca/
-
-# Build settings
+# Build Settings
 markdown: kramdown
-permalink: pretty
+sass:
+  style: compressed
+  sass_dir: _sass
 
-#for posts
+# Collections
+collections:
+  projects:
+    output: false
+
+# Defaults
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: "pages"
     values:
-      permalink: ""
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

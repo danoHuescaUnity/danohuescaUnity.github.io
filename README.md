@@ -1,32 +1,86 @@
-Freelancer Jekyll theme  
-=========================
+# Luis Huesca - Portfolio
 
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
+Senior Unity Developer Portfolio built with Jekyll for GitHub Pages.
 
-## How to use
- - Place a image in `/img/portfolio/`
- - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
- - Create posts to display your projects. Use the follow as an example:
-```txt
----
-layout: default
-modal-id: 1
-date: 2020-01-18
-img: cabin.png
-alt: image-alt
-project-date: January 2020
-client: The Client
-category: Web Development
-description: The description of the project
+## Quick Start
 
----
+1. Copy all files to your GitHub repository
+2. Enable GitHub Pages in repository Settings → Pages → Deploy from branch `main`
+3. Site will be live at `https://yourusername.github.io/`
+
+## Structure
+
+```
+├── _config.yml          # Jekyll config
+├── _data/               # Data files (easy content editing)
+│   ├── projects.yml     # Project entries
+│   ├── skills.yml       # Skills categories
+│   ├── experience.yml   # Work history
+│   └── navigation.yml   # Nav menu items
+├── _includes/           # Reusable components
+├── _layouts/            # Page templates
+├── assets/
+│   ├── css/main.css     # Styles
+│   ├── js/main.js       # Scripts
+│   ├── projects/        # Project media (add your own)
+│   └── resume/          # CV PDF
+└── index.html           # Homepage
 ```
 
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
+## Editing Content
 
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
+### Add a New Project
 
----------
-For more details, read the [documentation](http://jekyllrb.com/)
+Edit `_data/projects.yml` and add:
+
+```yaml
+- id: new-project
+  title: Project Name
+  company: Company
+  role: Your Role
+  short_desc: Brief description...
+  full_desc: |
+    Longer description for modal.
+  platforms:
+    - iOS
+    - Android
+  tech:
+    - Unity
+    - C#
+  category: mobile  # or 'vr'
+  video: /assets/projects/new-project/trailer.mp4
+  thumb: /assets/projects/new-project/thumb.jpg
+  screenshots:
+    - /assets/projects/new-project/screen1.jpg
+  responsibilities:
+    - Did this
+    - Did that
+  challenges:
+    - Solved X
+  links:
+    appstore: ""
+```
+
+### Update Experience
+
+Edit `_data/experience.yml`.
+
+### Update Skills
+
+Edit `_data/skills.yml`.
+
+## Local Development
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Visit `http://localhost:4000`
+
+## Palette
+
+- Background: #0B0F14 (Void Black)
+- Accent: #3DF2E0 (Neon Cyan)
+- Text: #E8ECF0
+- Muted: #8B9AAB

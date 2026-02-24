@@ -1,0 +1,17 @@
+<section class="section projects" id="projects">
+  <div class="section__container">
+    <h2 class="section__title">Featured Projects</h2>
+    
+    <div class="projects__filter">
+      <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="vr">VR / AR</button>
+    </div>
+    
+    <div class="projects__grid">
+      {% for project in site.data.projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

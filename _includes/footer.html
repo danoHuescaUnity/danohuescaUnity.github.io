@@ -1,48 +1,21 @@
-<!-- Footer -->
-<footer class="text-center">
-  <div class="footer-above">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.location }}</h3>
-          <p>
-            {% for adress in site.address %}
-            {{ adress.line }} <br>
-            {% endfor %}
-          </p>
-        </div>
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.social }}</h3>
-          <ul class="list-inline">
-            {% for network in site.social %}
-            <li>
-              <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.credits }}</h3>
-          <p>{{ site.credits }}</p>
-        </div>
-      </div>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__content">
+      <span class="footer__logo">Luis Huesca</span>
+      <span class="footer__divider">·</span>
+      <span class="footer__text">Unity / Game Developer</span>
     </div>
-  </div>
-  <div class="footer-below">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
-        </div>
-      </div>
+    <div class="footer__links">
+      <a href="mailto:dano.huesca@gmail.com" class="footer__link" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://linkedin.com/in/luishuesca" class="footer__link" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/danohuescaunity" class="footer__link" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
+    <p class="footer__copy">&copy; {{ 'now' | date: '%Y' }} Luis Huesca. All rights reserved.</p>
   </div>
 </footer>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll visible-xs visible-sm">
-  <a class="btn btn-primary" href="#page-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
-</div>

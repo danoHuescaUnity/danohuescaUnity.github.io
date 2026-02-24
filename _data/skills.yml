@@ -1,0 +1,70 @@
+- category: Core
+  icon: code
+  items:
+    - Unity (mobile + XR)
+    - C#
+    - Gameplay / Systems Engineering
+    - Tooling / Editor Scripting
+  tags:
+    - Unity
+    - Scripting
+
+- category: Rendering & Graphics
+  icon: cube
+  items:
+    - URP, HDRP
+    - Shader Graph
+    - Custom shaders (HLSL)
+    - VFX integration / optimization
+  tags:
+    - URP / HDRP
+    - Shaders
+    - VFX
+
+- category: Mobile & Live Ops
+  icon: mobile
+  items:
+    - iOS / Android shipping
+    - Performance profiling
+    - Remote Config
+    - A/B testing support
+    - Crash / analytics instrumentation
+  tags:
+    - Mobile
+    - Live Ops
+    - Performance
+
+- category: Services / SDKs
+  icon: plug
+  items:
+    - Firebase (Crashlytics, Remote Config)
+    - Analytics (Amplitude)
+    - Ads / monetization (AppLovin)
+    - Addressables
+  tags:
+    - Analytics
+    - Monetization
+    - SDKs
+
+- category: XR & Multiplayer
+  icon: vr-cardboard
+  items:
+    - "VR: Oculus SDK, SteamVR"
+    - "AR: Vuforia, Google Cardboard"
+    - "Multiplayer: Photon"
+  tags:
+    - VR
+    - AR
+    - Multiplayer
+
+- category: Production & Collaboration
+  icon: users
+  items:
+    - Tech leadership (teams up to ~5)
+    - Scope / priority management
+    - Cross-functional collaboration
+    - Git / GitHub workflow
+  tags:
+    - Leadership
+    - Management
+    - Collaboration

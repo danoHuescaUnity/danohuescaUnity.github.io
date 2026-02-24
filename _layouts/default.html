@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html>
-{% include head.html %}
-
-<body id="page-top" class="index">
-  {% include nav.html %}
-  {% include header.html %}
-  {% include about.html %}
-  {% include portfolio_grid.html %}
-  {% include skills.html %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   
-  {% if site.contact == "static" %}
-  {% include contact_static.html %}
-  {% elsif site.contact == "disqus" %}
-  {% include contact_disqus.html %}
-  {% else %}
-  {% include contact.html %}
-  {% endif %}
-
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  {% include navbar.html %}
+  
+  <main>
+    {{ content }}
+  </main>
+  
   {% include footer.html %}
-  {% include modals.html %}
-  {% include js.html %}
+  {% include back-to-top.html %}
+  {% include project-modal.html %}
+  
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
-
 </html>

@@ -1,0 +1,28 @@
+<nav class="navbar" id="navbar">
+  <div class="navbar__container">
+    <a href="{{ '/' | relative_url }}" class="navbar__logo">
+      <span class="navbar__logo-text">LH</span>
+    </a>
+    
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+    </button>
+    
+    <ul class="navbar__menu" id="nav-menu">
+      {% for item in site.data.navigation %}
+      <li class="navbar__item">
+        <a href="{{ item.url }}" class="navbar__link" data-section="{{ item.url | remove: '#' }}">
+          {{ item.name }}
+        </a>
+      </li>
+      {% endfor %}
+      <li class="navbar__item navbar__item--cta">
+        <a href="{{ '/assets/resume/Luis_Huesca_Resume26.pdf' | relative_url }}" class="btn btn--primary btn--sm" download>
+          <i class="fas fa-download"></i> CV
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

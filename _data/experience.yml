@@ -1,0 +1,55 @@
+- company: Metamoki
+  role: Senior Unity Engineer
+  dates: 2023–2025
+  bullets:
+    - Led gameplay systems development for Adventure Chef mobile game
+    - Built scalable live-ops framework for frequent content updates
+    - Optimized performance across diverse mobile devices
+    - Collaborated closely with design and art teams
+
+- company: Nvizzio
+  role: Unity Developer
+  dates: 2022–2023
+  bullets:
+    - Developed live-ops events and features for EverMerge
+    - Owned end-to-end implementation of Bingo mini-game
+    - Supported A/B testing and analytics integration
+
+- company: Crystal Fountains
+  role: Unity Graphics Developer
+  dates: 2020–2021
+  bullets:
+    - Created real-time graphics and visualization tools
+    - Developed custom shaders and rendering pipelines
+    - Built interactive fountain control systems
+
+- company: C.P.L.
+  role: Senior Unity Developer
+  dates: 2019–2020
+  bullets:
+    - Led technical development on Unity projects
+    - Mentored junior developers on best practices
+    - Architected scalable game systems
+
+- company: Codesign
+  role: Unity Lead Developer
+  dates: 2017–2020
+  bullets:
+    - Led development team on multiple Unity projects
+    - Established coding standards and review processes
+    - Shipped AR/VR experiences for enterprise clients
+
+- company: EON Reality México
+  role: Unity Developer
+  dates: 2016–2017
+  bullets:
+    - Developed VR experiences including TrueDown and Broken Gods
+    - Built multiplayer systems with custom hardware integration
+    - Created immersive interactions and VFX
+
+- company: Yeltic
+  role: Unity Developer
+  dates: "—"
+  bullets:
+    - Developed Unity applications and prototypes
+    - Contributed to project scoping and technical planning

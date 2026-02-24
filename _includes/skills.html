@@ -1,152 +1,26 @@
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Skills</h2>
-        <hr class="star-primary">
-      </div>
-    </div>
-
-    <div class="skills-grid">
-      <!-- Core -->
-      <div class="skills-card">
-        <div class="skills-card-header">
-          <span class="skills-card-icon" aria-hidden="true">
-            <i class="fa fa-cube"></i>
-          </span>
-          <h3 class="skills-card-title">Core</h3>
+<section class="section skills" id="skills">
+  <div class="section__container">
+    <h2 class="section__title">Skills & Tech Stack</h2>
+    
+    <div class="skills__grid">
+      {% for skill in site.data.skills %}
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <i class="fas fa-{{ skill.icon }} skill-card__icon"></i>
+          <h3 class="skill-card__title">{{ skill.category }}</h3>
         </div>
-
-        <ul class="skills-bullets">
-          <li>Unity (mobile + XR)</li>
-          <li>C#</li>
-          <li>Gameplay / Systems Engineering</li>
-          <li>Tooling / Editor Scripting</li>
+        <ul class="skill-card__list">
+          {% for item in skill.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
         </ul>
-
-        <div class="skills-chips" aria-label="Core skill tags">
-          <span class="skills-chip">Unity</span>
-          <span class="skills-chip">Scripting</span>
+        <div class="skill-card__tags">
+          {% for tag in skill.tags %}
+          <span class="tag tag--skill">{{ tag }}</span>
+          {% endfor %}
         </div>
       </div>
-
-      <!-- Rendering & Graphics -->
-      <div class="skills-card">
-        <div class="skills-card-header">
-          <span class="skills-card-icon" aria-hidden="true">
-            <i class="fa fa-desktop"></i>
-          </span>
-          <h3 class="skills-card-title">Rendering &amp; Graphics</h3>
-        </div>
-
-        <ul class="skills-bullets">
-          <li>URP, HDRP</li>
-          <li>Shader Graph</li>
-          <li>Custom shaders (HLSL / shader workflows)</li>
-          <li>VFX integration / optimization</li>
-        </ul>
-
-        <div class="skills-chips" aria-label="Rendering and graphics tags">
-          <span class="skills-chip">URP / HDRP</span>
-          <span class="skills-chip">Shaders</span>
-          <span class="skills-chip">VFX</span>
-        </div>
-      </div>
-
-      <!-- Mobile & Live Ops -->
-      <div class="skills-card">
-        <div class="skills-card-header">
-          <span class="skills-card-icon" aria-hidden="true">
-            <i class="fa fa-mobile"></i>
-          </span>
-          <h3 class="skills-card-title">Mobile &amp; Live Ops</h3>
-        </div>
-
-        <ul class="skills-bullets">
-          <li>iOS / Android shipping experience</li>
-          <li>Performance profiling &amp; optimization</li>
-          <li>Remote Config</li>
-          <li>A/B testing support</li>
-          <li>Crash / analytics instrumentation</li>
-        </ul>
-
-        <div class="skills-chips" aria-label="Mobile and live ops tags">
-          <span class="skills-chip">Mobile</span>
-          <span class="skills-chip">Live Ops</span>
-          <span class="skills-chip">Performance</span>
-        </div>
-      </div>
-
-      <!-- Services / SDKs -->
-      <div class="skills-card">
-        <div class="skills-card-header">
-          <span class="skills-card-icon" aria-hidden="true">
-            <i class="fa fa-cloud"></i>
-          </span>
-          <h3 class="skills-card-title">Services / SDKs</h3>
-        </div>
-
-        <ul class="skills-bullets">
-          <li>Firebase (Crashlytics, Remote Config)</li>
-          <li>Analytics (Amplitude)</li>
-          <li>Ads / monetization (e.g., AppLovin)</li>
-          <li>Addressables</li>
-        </ul>
-
-        <div class="skills-chips" aria-label="Services and SDK tags">
-          <span class="skills-chip">Analytics</span>
-          <span class="skills-chip">Monetization</span>
-          <span class="skills-chip">SDKs</span>
-        </div>
-      </div>
-
-      <!-- XR & Multiplayer -->
-      <div class="skills-card">
-        <div class="skills-card-header">
-          <span class="skills-card-icon" aria-hidden="true">
-            <i class="fa fa-gamepad"></i>
-          </span>
-          <h3 class="skills-card-title">XR &amp; Multiplayer</h3>
-        </div>
-
-        <ul class="skills-bullets">
-          <li>VR: Oculus SDK, SteamVR</li>
-          <li>AR: Vuforia</li>
-          <li>Google Cardboard</li>
-          <li>Multiplayer: Photon</li>
-        </ul>
-
-        <div class="skills-chips" aria-label="XR and multiplayer tags">
-          <span class="skills-chip">VR</span>
-          <span class="skills-chip">AR</span>
-          <span class="skills-chip">Multiplayer</span>
-        </div>
-      </div>
-
-      <!-- Production / Collaboration -->
-      <div class="skills-card">
-        <div class="skills-card-header">
-          <span class="skills-card-icon" aria-hidden="true">
-            <i class="fa fa-users"></i>
-          </span>
-          <h3 class="skills-card-title">Production &amp; Collaboration</h3>
-        </div>
-
-        <ul class="skills-bullets">
-          <li>Tech leadership (teams up to ~5)</li>
-          <li>Scope / priority management</li>
-          <li>Cross-functional collaboration</li>
-          <li>Git / GitHub workflow</li>
-        </ul>
-
-        <div class="skills-chips" aria-label="Production and collaboration tags">
-          <span class="skills-chip">Leadership</span>
-          <span class="skills-chip">Management</span>
-          <span class="skills-chip">Collaboration</span>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
-

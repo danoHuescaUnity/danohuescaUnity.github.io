@@ -1,0 +1,157 @@
+- id: adventure-chef
+  title: Adventure Chef
+  company: Metamoki
+  role: Game Development
+  short_desc: Built and shipped gameplay systems and live features in Unity for iOS/Android, focusing on smooth UX, performance, and scalable content updates.
+  full_desc: |
+    Developed core gameplay mechanics and live-ops features for a mobile cooking adventure game.
+    Focused on performance optimization, smooth animations, and scalable content delivery systems.
+  platforms:
+    - iOS
+    - Android
+  tech:
+    - Unity
+    - C#
+  category: mobile
+  video: /assets/projects/adventure-chef/trailer.mp4
+  thumb: /assets/projects/adventure-chef/thumb.jpg
+  screenshots:
+    - /assets/projects/adventure-chef/screen1.jpg
+    - /assets/projects/adventure-chef/screen2.jpg
+  responsibilities:
+    - Implemented core gameplay systems and UI flows
+    - Built live-ops event framework for content updates
+    - Optimized performance for low-end mobile devices
+    - Collaborated with designers on feature implementation
+  challenges:
+    - Maintaining 60fps on older devices while supporting rich VFX
+    - Building scalable content pipeline for frequent updates
+  links:
+    appstore: ""
+    playstore: ""
+
+- id: evermerge
+  title: EverMerge
+  company: Nvizzio
+  role: Live Ops / UI / A/B Testing
+  short_desc: Worked on live-ops events and feature updates in Unity, improving UI/VFX integration and stability for a large-scale mobile game.
+  full_desc: |
+    Contributed to live-ops events and feature updates for a successful merge puzzle game.
+    Enhanced UI/VFX integration and improved stability across the codebase.
+  platforms:
+    - iOS
+    - Android
+  tech:
+    - Unity
+    - C#
+  category: mobile
+  video: /assets/projects/evermerge/trailer.mp4
+  thumb: /assets/projects/evermerge/thumb.jpg
+  screenshots:
+    - /assets/projects/evermerge/screen1.jpg
+    - /assets/projects/evermerge/screen2.jpg
+  responsibilities:
+    - Developed live-ops event systems and timed features
+    - Integrated UI animations and VFX polish
+    - Supported A/B testing infrastructure
+    - Fixed bugs and improved codebase stability
+  challenges:
+    - Coordinating updates across a large live player base
+    - Balancing feature velocity with quality
+  links:
+    appstore: ""
+    playstore: ""
+
+- id: bingo
+  title: Bingo
+  company: Nvizzio
+  role: Live Ops / UI / A/B Testing
+  short_desc: Designed and implemented the Bingo mini-game end-to-end in Unity, including gameplay flow, data handling, animations, and VFX.
+  full_desc: |
+    Owned the full development cycle of a Bingo mini-game feature.
+    Handled everything from gameplay logic to data integration, animations, and visual effects.
+  platforms:
+    - iOS
+    - Android
+  tech:
+    - Unity
+    - C#
+  category: mobile
+  video: /assets/projects/bingo/trailer.mp4
+  thumb: /assets/projects/bingo/thumb.jpg
+  screenshots:
+    - /assets/projects/bingo/screen1.jpg
+    - /assets/projects/bingo/screen2.jpg
+  responsibilities:
+    - Designed and implemented complete mini-game from scratch
+    - Built data handling and state management systems
+    - Created animations and integrated VFX
+    - Coordinated with QA for thorough testing
+  challenges:
+    - Fitting complex feature within tight production timeline
+    - Ensuring smooth integration with existing game systems
+  links:
+    appstore: ""
+    playstore: ""
+
+- id: truedown
+  title: TrueDown
+  company: Eon Reality
+  role: VR Experience
+  short_desc: Developed VR interactions, animations, and VFX for a story-driven horror experience, helping shape scope and technical decisions during production.
+  full_desc: |
+    Created immersive VR interactions for a narrative horror experience.
+    Contributed to technical direction and scope management throughout development.
+  platforms:
+    - Oculus
+    - SteamVR
+  tech:
+    - Unity
+    - C#
+  category: vr
+  video: /assets/projects/truedown/trailer.mp4
+  thumb: /assets/projects/truedown/thumb.jpg
+  screenshots:
+    - /assets/projects/truedown/screen1.jpg
+    - /assets/projects/truedown/screen2.jpg
+  responsibilities:
+    - Developed VR interaction systems and mechanics
+    - Created atmospheric animations and VFX
+    - Helped define technical scope and priorities
+    - Optimized for VR performance requirements
+  challenges:
+    - Maintaining immersion while hitting VR frame targets
+    - Designing intuitive interactions for horror context
+  links:
+    steam: ""
+
+- id: broken-gods
+  title: Broken Gods
+  company: Eon Reality
+  role: VR Game / Multiplayer / Online
+  short_desc: Built core gameplay and multiplayer features for a VR shooter with custom hardware (treadmill + rifles), while managing scope and priorities with the team.
+  full_desc: |
+    Developed gameplay and networking systems for a VR arena shooter using custom locomotion hardware.
+    Coordinated with team on scope management and technical decision-making.
+  platforms:
+    - Oculus
+    - SteamVR
+  tech:
+    - Unity
+    - C#
+  category: vr
+  video: /assets/projects/broken-gods/trailer.mp4
+  thumb: /assets/projects/broken-gods/thumb.jpg
+  screenshots:
+    - /assets/projects/broken-gods/screen1.jpg
+    - /assets/projects/broken-gods/screen2.jpg
+  responsibilities:
+    - Built core gameplay mechanics and weapon systems
+    - Implemented multiplayer networking with Photon
+    - Integrated custom hardware (treadmill, rifle controllers)
+    - Managed technical scope with production team
+  challenges:
+    - Syncing custom hardware input with networked gameplay
+    - Balancing competitive multiplayer in VR
+  links:
+    steam: ""
