@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // -----------------------------
-  // Navbar scroll spy (stable + contact fix)
+  // Navbar scroll spy (stable + contact fix + hero clears)
   // -----------------------------
   const navLinks = Array.from(
     document.querySelectorAll(".navbar__link[data-section]")
@@ -138,56 +138,53 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const sectionIds = navLinks.map(getSectionIdFromLink).filter(Boolean);
-  const sections = sectionIds
-    .map((id) => document.getElementById(id))
-    .filter(Boolean);
+  const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
 
   const setActive = (id) => {
     navLinks.forEach((a) => a.classList.remove("active"));
     const link = navLinks.find((a) => getSectionIdFromLink(a) === id);
     if (link) link.classList.add("active");
-    const clearActive = () => {
-  navLinks.forEach((a) => a.classList.remove("active"));
-};
+  };
+
+  const clearActive = () => {
+    navLinks.forEach((a) => a.classList.remove("active"));
   };
 
   const navHeight = () => {
-    const css = getComputedStyle(document.documentElement).getPropertyValue(
-      "--nav-height"
-    );
+    const css = getComputedStyle(document.documentElement).getPropertyValue("--nav-height");
     const n = parseInt(css, 10);
     return Number.isFinite(n) ? n : 70;
   };
 
-    const updateActiveOnScroll = () => {
+  const updateActiveOnScroll = () => {
     if (!sections.length) return;
 
     const marker = window.scrollY + navHeight() + window.innerHeight * 0.25; // 25% from top
 
-    // ✅ If we're above the first section (About), we're in Hero -> clear all highlights
+    // If we're above the first section (About), we're in Hero -> clear all highlights
     const firstTop = sections[0].offsetTop;
     if (marker < firstTop) {
-        clearActive();
-        return;
+      clearActive();
+      return;
     }
 
-    // ✅ If we're near the bottom, force last section (Contact)
+    // If we're near the bottom, force last section (Contact)
     const nearBottom =
-        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
 
     if (nearBottom) {
-        setActive(sections[sections.length - 1].id);
-        return;
+      setActive(sections[sections.length - 1].id);
+      return;
     }
 
     let current = sections[0].id;
     for (const s of sections) {
-        if (s.offsetTop <= marker) current = s.id;
-        else break;
+      if (s.offsetTop <= marker) current = s.id;
+      else break;
     }
 
     setActive(current);
-    };
+  };
 
   if (sections.length) {
     window.addEventListener("scroll", updateActiveOnScroll, { passive: true });
