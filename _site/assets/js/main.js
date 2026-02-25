@@ -1,92 +1,96 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // -----------------------------
+  // Modal (guarded, no early return)
+  // -----------------------------
   const modal = document.getElementById("project-modal");
   const modalContent = document.getElementById("modal-content");
   const templateEl = document.getElementById("modal-template");
 
-  if (!modal || !modalContent || !templateEl) return;
+  if (modal && modalContent && templateEl) {
+    const openModal = () => {
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    };
 
-  const openModal = () => {
-    modal.classList.add("open");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  };
+    const closeModal = () => {
+      // Stop/reset videos so they can play again next time
+      modalContent.querySelectorAll("video").forEach((v) => {
+        try {
+          v.pause();
+          v.currentTime = 0;
 
- const closeModal = () => {
-  modalContent.querySelectorAll("video").forEach((v) => {
-    try {
-      v.pause();
-      v.currentTime = 0;
+          const s = v.querySelector("source");
+          if (s) s.src = "";
 
-      const s = v.querySelector("source");
-      if (s) s.src = "";
+          v.load();
+        } catch (_) {}
+      });
 
-      v.load();
-    } catch (_) {}
-  });
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      modalContent.innerHTML = "";
+      document.body.style.overflow = "";
+    };
 
-  modal.classList.remove("open");
-  modal.setAttribute("aria-hidden", "true");
-  modalContent.innerHTML = "";
-  document.body.style.overflow = "";
-};
+    const fill = (tpl, p) => {
+      const platforms = (p.platforms || [])
+        .map((x) => `<span class="tag tag--platform">${x}</span>`)
+        .join("");
+      const tech = (p.tech || [])
+        .map((x) => `<span class="tag tag--tech">${x}</span>`)
+        .join("");
+      const responsibilities = (p.responsibilities || [])
+        .map((x) => `<li>${x}</li>`)
+        .join("");
+      const challenges = (p.challenges || [])
+        .map((x) => `<li>${x}</li>`)
+        .join("");
 
-  const fill = (tpl, p) => {
-    const platforms = (p.platforms || [])
-      .map((x) => `<span class="tag tag--platform">${x}</span>`)
-      .join("");
-    const tech = (p.tech || [])
-      .map((x) => `<span class="tag tag--tech">${x}</span>`)
-      .join("");
-    const responsibilities = (p.responsibilities || [])
-      .map((x) => `<li>${x}</li>`)
-      .join("");
-    const challenges = (p.challenges || [])
-      .map((x) => `<li>${x}</li>`)
-      .join("");
+      return tpl
+        .replaceAll("{title}", p.title || "")
+        .replaceAll("{company}", p.company || "")
+        .replaceAll("{role}", p.role || "")
+        .replaceAll("{video}", p.video || "")
+        .replaceAll("{thumb}", p.thumb || "")
+        .replaceAll("{full_desc}", p.full_desc || "")
+        .replaceAll("{platforms}", platforms)
+        .replaceAll("{tech}", tech)
+        .replaceAll("{responsibilities}", responsibilities)
+        .replaceAll("{challenges}", challenges);
+    };
 
-    return tpl
-      .replaceAll("{title}", p.title || "")
-      .replaceAll("{company}", p.company || "")
-      .replaceAll("{role}", p.role || "")
-      .replaceAll("{video}", p.video || "")
-      .replaceAll("{thumb}", p.thumb || "")
-      .replaceAll("{full_desc}", p.full_desc || "")
-      .replaceAll("{platforms}", platforms)
-      .replaceAll("{tech}", tech)
-      .replaceAll("{responsibilities}", responsibilities)
-      .replaceAll("{challenges}", challenges);
-  };
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-modal]");
+      if (!btn) return;
 
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest("[data-modal]");
-    if (!btn) return;
+      const id = btn.getAttribute("data-modal");
+      const p = (window.projectsData || []).find((x) => x.id === id);
+      if (!p) return;
 
-    const id = btn.getAttribute("data-modal");
-    const p = (window.projectsData || []).find((x) => x.id === id);
-    if (!p) return;
+      modalContent.innerHTML = fill(templateEl.innerHTML, p);
 
-    modalContent.innerHTML = fill(templateEl.innerHTML, p);
+      // Force video src + load (avoids stuck/black states)
+      const v = modalContent.querySelector("video.modal__video");
+      const srcEl = v?.querySelector("source");
+      if (v && srcEl) {
+        srcEl.src = p.video || "";
+        v.load();
+      }
 
-    const v = modalContent.querySelector("video.modal__video");
-    const srcEl = v?.querySelector("source");
+      openModal();
+    });
 
-    if (v && srcEl) {
-    srcEl.src = p.video || "";
-    v.load();
-    }
+    document.addEventListener("click", (e) => {
+      if (e.target.closest("[data-close-modal]")) closeModal();
+    });
 
-    openModal();
-  });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("open")) closeModal();
+    });
+  }
 
-  document.addEventListener("click", (e) => {
-    if (e.target.closest("[data-close-modal]")) closeModal();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal.classList.contains("open")) closeModal();
-  });
-
-    // -----------------------------
+  // -----------------------------
   // Projects filter (ALL/MOBILE/VR)
   // -----------------------------
   const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
@@ -100,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const applyFilter = (filter) => {
       const f = (filter || "all").toLowerCase();
-
       projectCards.forEach((card) => {
         const cat = (card.getAttribute("data-category") || "").toLowerCase();
         const show = f === "all" || cat === f;
@@ -116,10 +119,79 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // initial state
     const active = document.querySelector(".filter-btn.filter-btn--active");
     applyFilter(active?.getAttribute("data-filter") || "all");
   }
 
-  
+  // -----------------------------
+  // Navbar scroll spy (stable + contact fix)
+  // -----------------------------
+  const navLinks = Array.from(
+    document.querySelectorAll(".navbar__link[data-section]")
+  );
+
+  const getSectionIdFromLink = (a) => {
+    const ds = a.getAttribute("data-section");
+    if (ds) return ds.replace("#", "").trim();
+    const href = a.getAttribute("href") || "";
+    return href.startsWith("#") ? href.slice(1) : "";
+  };
+
+  const sectionIds = navLinks.map(getSectionIdFromLink).filter(Boolean);
+  const sections = sectionIds
+    .map((id) => document.getElementById(id))
+    .filter(Boolean);
+
+  const setActive = (id) => {
+    navLinks.forEach((a) => a.classList.remove("active"));
+    const link = navLinks.find((a) => getSectionIdFromLink(a) === id);
+    if (link) link.classList.add("active");
+    const clearActive = () => {
+  navLinks.forEach((a) => a.classList.remove("active"));
+};
+  };
+
+  const navHeight = () => {
+    const css = getComputedStyle(document.documentElement).getPropertyValue(
+      "--nav-height"
+    );
+    const n = parseInt(css, 10);
+    return Number.isFinite(n) ? n : 70;
+  };
+
+    const updateActiveOnScroll = () => {
+    if (!sections.length) return;
+
+    const marker = window.scrollY + navHeight() + window.innerHeight * 0.25; // 25% from top
+
+    // ✅ If we're above the first section (About), we're in Hero -> clear all highlights
+    const firstTop = sections[0].offsetTop;
+    if (marker < firstTop) {
+        clearActive();
+        return;
+    }
+
+    // ✅ If we're near the bottom, force last section (Contact)
+    const nearBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+
+    if (nearBottom) {
+        setActive(sections[sections.length - 1].id);
+        return;
+    }
+
+    let current = sections[0].id;
+    for (const s of sections) {
+        if (s.offsetTop <= marker) current = s.id;
+        else break;
+    }
+
+    setActive(current);
+    };
+
+  if (sections.length) {
+    window.addEventListener("scroll", updateActiveOnScroll, { passive: true });
+    window.addEventListener("resize", updateActiveOnScroll);
+    updateActiveOnScroll(); // initial
+  }
 });
