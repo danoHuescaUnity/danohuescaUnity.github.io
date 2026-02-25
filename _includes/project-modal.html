@@ -2,8 +2,9 @@
   <div class="modal__backdrop" data-close-modal></div>
   <div class="modal__container">
     <button class="modal__close" data-close-modal aria-label="Close modal">
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times" aria-hidden="true"></i>
     </button>
+
     <div class="modal__content" id="modal-content">
       <!-- Content injected by JS -->
     </div>
@@ -12,11 +13,12 @@
 
 <script type="text/template" id="modal-template">
   <div class="modal__media">
-    <video class="modal__video" controls poster="{thumb}">
+    <video class="modal__video" controls preload="metadata" playsinline>
       <source src="{video}" type="video/mp4">
       Your browser does not support video.
     </video>
   </div>
+
   <div class="modal__body">
     <div class="modal__header">
       <h2 class="modal__title">{title}</h2>
@@ -26,18 +28,22 @@
         <span class="modal__role">{role}</span>
       </p>
     </div>
+
     <div class="modal__tags">
       {platforms}
       {tech}
     </div>
+
     <div class="modal__section">
       <h3>Overview</h3>
       <p>{full_desc}</p>
     </div>
+
     <div class="modal__section">
       <h3>Responsibilities</h3>
       <ul class="modal__list">{responsibilities}</ul>
     </div>
+
     <div class="modal__section">
       <h3>Challenges Solved</h3>
       <ul class="modal__list">{challenges}</ul>
@@ -49,15 +55,15 @@
   window.projectsData = [
     {% for project in site.data.projects %}
     {
-      id: "{{ project.id }}",
-      title: "{{ project.title }}",
-      company: "{{ project.company }}",
-      role: "{{ project.role }}",
-      short_desc: "{{ project.short_desc | escape }}",
+      id: {{ project.id | jsonify }},
+      title: {{ project.title | jsonify }},
+      company: {{ project.company | jsonify }},
+      role: {{ project.role | jsonify }},
+      short_desc: {{ project.short_desc | jsonify }},
       full_desc: {{ project.full_desc | jsonify }},
       platforms: {{ project.platforms | jsonify }},
       tech: {{ project.tech | jsonify }},
-      category: "{{ project.category }}",
+      category: {{ project.category | jsonify }},
       video: "{{ project.video | relative_url }}",
       thumb: "{{ project.thumb | relative_url }}",
       screenshots: {{ project.screenshots | jsonify }},

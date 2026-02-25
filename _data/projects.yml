@@ -15,6 +15,7 @@
   category: mobile
   video: /assets/projects/adventure-chef/trailer.mp4
   thumb: /assets/projects/adventure-chef/thumb.jpg
+  thumb_video: /assets/projects/adventure-chef/thumb.mp4
   screenshots:
     - /assets/projects/adventure-chef/screen1.jpg
     - /assets/projects/adventure-chef/screen2.jpg
@@ -47,6 +48,7 @@
   category: mobile
   video: /assets/projects/evermerge/trailer.mp4
   thumb: /assets/projects/evermerge/thumb.jpg
+  thumb_video: /assets/projects/evermerge/thumb.mp4
   screenshots:
     - /assets/projects/evermerge/screen1.jpg
     - /assets/projects/evermerge/screen2.jpg
@@ -79,6 +81,7 @@
   category: mobile
   video: /assets/projects/bingo/trailer.mp4
   thumb: /assets/projects/bingo/thumb.jpg
+  thumb_video: /assets/projects/bingo/thumb.mp4
   screenshots:
     - /assets/projects/bingo/screen1.jpg
     - /assets/projects/bingo/screen2.jpg
@@ -111,6 +114,7 @@
   category: vr
   video: /assets/projects/truedown/trailer.mp4
   thumb: /assets/projects/truedown/thumb.jpg
+  thumb_video: /assets/projects/truedown/thumb.mp4
   screenshots:
     - /assets/projects/truedown/screen1.jpg
     - /assets/projects/truedown/screen2.jpg
@@ -142,6 +146,7 @@
   category: vr
   video: /assets/projects/broken-gods/trailer.mp4
   thumb: /assets/projects/broken-gods/thumb.jpg
+  thumb_video: /assets/projects/broken-gods/thumb.mp4
   screenshots:
     - /assets/projects/broken-gods/screen1.jpg
     - /assets/projects/broken-gods/screen2.jpg

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Senior Unity Developer Portfolio">
+  <title>Home | Luis Huesca</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+  <div class="navbar__container">
+    <a href="/" class="navbar__logo">
+      <span class="navbar__logo-text">LH</span>
+    </a>
+    
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+    </button>
+    
+    <ul class="navbar__menu" id="nav-menu">
+      
+      <li class="navbar__item">
+        <a href="#about" class="navbar__link" data-section="about">
+          About
+        </a>
+      </li>
+      
+      <li class="navbar__item">
+        <a href="#projects" class="navbar__link" data-section="projects">
+          Projects
+        </a>
+      </li>
+      
+      <li class="navbar__item">
+        <a href="#skills" class="navbar__link" data-section="skills">
+          Skills
+        </a>
+      </li>
+      
+      <li class="navbar__item">
+        <a href="#experience" class="navbar__link" data-section="experience">
+          Experience
+        </a>
+      </li>
+      
+      <li class="navbar__item">
+        <a href="#contact" class="navbar__link" data-section="contact">
+          Contact
+        </a>
+      </li>
+      
+      <li class="navbar__item navbar__item--cta">
+        <a href="/assets/resume/Luis_Huesca_Resume26.pdf" class="btn btn--primary btn--sm" download>
+          <i class="fas fa-download"></i> CV
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  
+  <main>
+    <section class="hero" id="hero" data-testid="hero-section" x-file-name="App" x-line-number="324" x-component="section" x-id="App_324" x-dynamic="false"><div class="hero__container" x-file-name="App" x-line-number="325" x-component="div" x-id="App_325" x-dynamic="false"><div class="hero__content" x-file-name="App" x-line-number="326" x-component="div" x-id="App_326" x-dynamic="false"><p class="hero__greeting" x-file-name="App" x-line-number="327" x-component="p" x-id="App_327" x-dynamic="false">Hello, I'm</p><h1 class="hero__name" x-file-name="App" x-line-number="328" x-component="h1" x-id="App_328" x-dynamic="false">Luis Huesca</h1><p class="hero__title" x-file-name="App" x-line-number="329" x-component="p" x-id="App_329" x-dynamic="false">Unity / Game Developer</p><p class="hero__tagline" x-file-name="App" x-line-number="330" x-component="p" x-id="App_330" x-dynamic="false">I build and ship polished gameplay systems, live-ops features, and immersive VR/AR experiences—always focused on performance, clarity, and player delight.</p><div class="hero__chips" x-file-name="App" x-line-number="334" x-component="div" x-id="App_334" x-dynamic="false"><span data-ve-dynamic="true" x-excluded="true" style="display: contents;"><span class="chip" x-file-name="App" x-line-number="336" x-component="span" x-id="App_336" x-dynamic="true" x-source-type="external" x-source-editable="false" x-array-item-param="chip"><span data-ve-dynamic="true" x-excluded="true" style="display: contents;">9+ Years</span></span><span class="chip" x-file-name="App" x-line-number="336" x-component="span" x-id="App_336" x-dynamic="true" x-source-type="external" x-source-editable="false" x-array-item-param="chip"><span data-ve-dynamic="true" x-excluded="true" style="display: contents;">Mobile / AR / VR</span></span><span class="chip" x-file-name="App" x-line-number="336" x-component="span" x-id="App_336" x-dynamic="true" x-source-type="external" x-source-editable="false" x-array-item-param="chip"><span data-ve-dynamic="true" x-excluded="true" style="display: contents;">URP / HDRP</span></span><span class="chip" x-file-name="App" x-line-number="336" x-component="span" x-id="App_336" x-dynamic="true" x-source-type="external" x-source-editable="false" x-array-item-param="chip"><span data-ve-dynamic="true" x-excluded="true" style="display: contents;">Shaders</span></span><span class="chip" x-file-name="App" x-line-number="336" x-component="span" x-id="App_336" x-dynamic="true" x-source-type="external" x-source-editable="false" x-array-item-param="chip"><span data-ve-dynamic="true" x-excluded="true" style="display: contents;">LiveOps</span></span><span class="chip" x-file-name="App" x-line-number="336" x-component="span" x-id="App_336" x-dynamic="true" x-source-type="external" x-source-editable="false" x-array-item-param="chip"><span data-ve-dynamic="true" x-excluded="true" style="display: contents;">Multiplayer</span></span></span></div><div class="hero__ctas" x-file-name="App" x-line-number="340" x-component="div" x-id="App_340" x-dynamic="false"><a href="/assets/resume/Luis_Huesca_Resume26.pdf" class="btn btn--primary" download="" data-testid="download-cv-hero" x-file-name="App" x-line-number="341" x-component="a" x-id="App_341" x-dynamic="false"><i class="fas fa-download" x-file-name="App" x-line-number="342" x-component="i" x-id="App_342" x-dynamic="false"></i> Download CV</a><button class="btn btn--outline" data-testid="view-projects-btn" x-file-name="App" x-line-number="344" x-component="button" x-id="App_344" x-dynamic="false"><i class="fas fa-folder-open" x-file-name="App" x-line-number="345" x-component="i" x-id="App_345" x-dynamic="false"></i> View Projects</button></div></div><div class="hero__visual" x-file-name="App" x-line-number="350" x-component="div" x-id="App_350" x-dynamic="false"><div class="hero__glow" x-file-name="App" x-line-number="351" x-component="div" x-id="App_351" x-dynamic="false"></div><div class="hero__shape" x-file-name="App" x-line-number="352" x-component="div" x-id="App_352" x-dynamic="false"><i class="fas fa-gamepad" x-file-name="App" x-line-number="353" x-component="i" x-id="App_353" x-dynamic="false"></i></div></div></div><div class="hero__scroll" x-file-name="App" x-line-number="358" x-component="div" x-id="App_358" x-dynamic="false"><button class="hero__scroll-link" data-testid="scroll-down" x-file-name="App" x-line-number="359" x-component="button" x-id="App_359" x-dynamic="false"><span x-file-name="App" x-line-number="360" x-component="span" x-id="App_360" x-dynamic="false">Scroll</span><i class="fas fa-chevron-down" x-file-name="App" x-line-number="361" x-component="i" x-id="App_361" x-dynamic="false"></i></button></div></section>
+<section class="section about" id="about">
+  <div class="section__container">
+    <h2 class="section__title">About</h2>
+    <div class="about__content">
+      <div class="about__text">
+        <p class="about__lead">
+          I'm a <strong>Senior Unity Engineer</strong> focused on mobile games. I build and ship gameplay systems, UI flows, and live-ops features with a strong bias for <em>performance, clarity, and maintainability</em>.
+        </p>
+        <p>
+          I've worked across 2D/3D, AR/VR, and production live games—owning features end-to-end from prototype to release. I collaborate closely with designers and artists, write clean C# and scalable architecture, and profile/optimize for smooth gameplay on real devices.
+        </p>
+        <div class="about__strengths">
+          <h3>Strengths</h3>
+          <ul class="about__list">
+            <li><i class="fas fa-check"></i> Bridging art + tech for polished visuals</li>
+            <li><i class="fas fa-check"></i> Performance optimization on real devices</li>
+            <li><i class="fas fa-check"></i> Shipping features end-to-end</li>
+            <li><i class="fas fa-check"></i> Technical leadership & mentoring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section projects" id="projects">
+  <div class="section__container">
+    <h2 class="section__title">Featured Projects</h2>
+    
+    <div class="projects__filter">
+      <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="vr">VR / AR</button>
+    </div>
+    
+    <div class="projects__grid">
+      
+        <article class="project-card" data-category="mobile" data-project="adventure-chef">
+  <div class="project-card__media">
+    
+      <video
+        class="project-card__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        
+          poster="/assets/projects/adventure-chef/thumb.jpg"
+        
+      >
+        <source src="/assets/projects/adventure-chef/thumb.mp4" type="video/mp4">
+      </video>
+    
+
+    <div class="project-card__overlay">
+      <button class="btn btn--outline btn--sm project-card__btn" data-modal="adventure-chef">
+        View Details
+      </button>
+    </div>
+  </div>
+
+  <div class="project-card__content">
+    <h3 class="project-card__title">Adventure Chef</h3>
+    <p class="project-card__meta">
+      <span class="project-card__company">Metamoki</span>
+      <span class="project-card__divider">—</span>
+      <span class="project-card__role">Game Development</span>
+    </p>
+    <p class="project-card__desc">Built and shipped gameplay systems and live features in Unity for iOS/Android, focusing on smooth UX, performance, and scalable content updates.</p>
+    <div class="project-card__tags">
+      
+        <span class="tag tag--platform">iOS</span>
+      
+        <span class="tag tag--platform">Android</span>
+      
+      
+        <span class="tag tag--tech">Unity</span>
+      
+        <span class="tag tag--tech">C#</span>
+      
+    </div>
+  </div>
+</article>
+      
+        <article class="project-card" data-category="mobile" data-project="evermerge">
+  <div class="project-card__media">
+    
+      <video
+        class="project-card__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        
+          poster="/assets/projects/evermerge/thumb.jpg"
+        
+      >
+        <source src="/assets/projects/evermerge/thumb.mp4" type="video/mp4">
+      </video>
+    
+
+    <div class="project-card__overlay">
+      <button class="btn btn--outline btn--sm project-card__btn" data-modal="evermerge">
+        View Details
+      </button>
+    </div>
+  </div>
+
+  <div class="project-card__content">
+    <h3 class="project-card__title">EverMerge</h3>
+    <p class="project-card__meta">
+      <span class="project-card__company">Nvizzio</span>
+      <span class="project-card__divider">—</span>
+      <span class="project-card__role">Live Ops / UI / A/B Testing</span>
+    </p>
+    <p class="project-card__desc">Worked on live-ops events and feature updates in Unity, improving UI/VFX integration and stability for a large-scale mobile game.</p>
+    <div class="project-card__tags">
+      
+        <span class="tag tag--platform">iOS</span>
+      
+        <span class="tag tag--platform">Android</span>
+      
+      
+        <span class="tag tag--tech">Unity</span>
+      
+        <span class="tag tag--tech">C#</span>
+      
+    </div>
+  </div>
+</article>
+      
+        <article class="project-card" data-category="mobile" data-project="bingo">
+  <div class="project-card__media">
+    
+      <video
+        class="project-card__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        
+          poster="/assets/projects/bingo/thumb.jpg"
+        
+      >
+        <source src="/assets/projects/bingo/thumb.mp4" type="video/mp4">
+      </video>
+    
+
+    <div class="project-card__overlay">
+      <button class="btn btn--outline btn--sm project-card__btn" data-modal="bingo">
+        View Details
+      </button>
+    </div>
+  </div>
+
+  <div class="project-card__content">
+    <h3 class="project-card__title">Bingo</h3>
+    <p class="project-card__meta">
+      <span class="project-card__company">Nvizzio</span>
+      <span class="project-card__divider">—</span>
+      <span class="project-card__role">Live Ops / UI / A/B Testing</span>
+    </p>
+    <p class="project-card__desc">Designed and implemented the Bingo mini-game end-to-end in Unity, including gameplay flow, data handling, animations, and VFX.</p>
+    <div class="project-card__tags">
+      
+        <span class="tag tag--platform">iOS</span>
+      
+        <span class="tag tag--platform">Android</span>
+      
+      
+        <span class="tag tag--tech">Unity</span>
+      
+        <span class="tag tag--tech">C#</span>
+      
+    </div>
+  </div>
+</article>
+      
+        <article class="project-card" data-category="vr" data-project="truedown">
+  <div class="project-card__media">
+    
+      <video
+        class="project-card__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        
+          poster="/assets/projects/truedown/thumb.jpg"
+        
+      >
+        <source src="/assets/projects/truedown/thumb.mp4" type="video/mp4">
+      </video>
+    
+
+    <div class="project-card__overlay">
+      <button class="btn btn--outline btn--sm project-card__btn" data-modal="truedown">
+        View Details
+      </button>
+    </div>
+  </div>
+
+  <div class="project-card__content">
+    <h3 class="project-card__title">TrueDown</h3>
+    <p class="project-card__meta">
+      <span class="project-card__company">Eon Reality</span>
+      <span class="project-card__divider">—</span>
+      <span class="project-card__role">VR Experience</span>
+    </p>
+    <p class="project-card__desc">Developed VR interactions, animations, and VFX for a story-driven horror experience, helping shape scope and technical decisions during production.</p>
+    <div class="project-card__tags">
+      
+        <span class="tag tag--platform">Oculus</span>
+      
+        <span class="tag tag--platform">SteamVR</span>
+      
+      
+        <span class="tag tag--tech">Unity</span>
+      
+        <span class="tag tag--tech">C#</span>
+      
+    </div>
+  </div>
+</article>
+      
+        <article class="project-card" data-category="vr" data-project="broken-gods">
+  <div class="project-card__media">
+    
+      <video
+        class="project-card__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        
+          poster="/assets/projects/broken-gods/thumb.jpg"
+        
+      >
+        <source src="/assets/projects/broken-gods/thumb.mp4" type="video/mp4">
+      </video>
+    
+
+    <div class="project-card__overlay">
+      <button class="btn btn--outline btn--sm project-card__btn" data-modal="broken-gods">
+        View Details
+      </button>
+    </div>
+  </div>
+
+  <div class="project-card__content">
+    <h3 class="project-card__title">Broken Gods</h3>
+    <p class="project-card__meta">
+      <span class="project-card__company">Eon Reality</span>
+      <span class="project-card__divider">—</span>
+      <span class="project-card__role">VR Game / Multiplayer / Online</span>
+    </p>
+    <p class="project-card__desc">Built core gameplay and multiplayer features for a VR shooter with custom hardware (treadmill + rifles), while managing scope and priorities with the team.</p>
+    <div class="project-card__tags">
+      
+        <span class="tag tag--platform">Oculus</span>
+      
+        <span class="tag tag--platform">SteamVR</span>
+      
+      
+        <span class="tag tag--tech">Unity</span>
+      
+        <span class="tag tag--tech">C#</span>
+      
+    </div>
+  </div>
+</article>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section skills" id="skills">
+  <div class="section__container">
+    <h2 class="section__title">Skills & Tech Stack</h2>
+    
+    <div class="skills__grid">
+      
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <i class="fas fa-code skill-card__icon"></i>
+          <h3 class="skill-card__title">Core</h3>
+        </div>
+        <ul class="skill-card__list">
+          
+          <li>Unity (mobile + XR)</li>
+          
+          <li>C#</li>
+          
+          <li>Gameplay / Systems Engineering</li>
+          
+          <li>Tooling / Editor Scripting</li>
+          
+        </ul>
+        <div class="skill-card__tags">
+          
+          <span class="tag tag--skill">Unity</span>
+          
+          <span class="tag tag--skill">Scripting</span>
+          
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <i class="fas fa-cube skill-card__icon"></i>
+          <h3 class="skill-card__title">Rendering & Graphics</h3>
+        </div>
+        <ul class="skill-card__list">
+          
+          <li>URP, HDRP</li>
+          
+          <li>Shader Graph</li>
+          
+          <li>Custom shaders (HLSL)</li>
+          
+          <li>VFX integration / optimization</li>
+          
+        </ul>
+        <div class="skill-card__tags">
+          
+          <span class="tag tag--skill">URP / HDRP</span>
+          
+          <span class="tag tag--skill">Shaders</span>
+          
+          <span class="tag tag--skill">VFX</span>
+          
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <i class="fas fa-mobile skill-card__icon"></i>
+          <h3 class="skill-card__title">Mobile & Live Ops</h3>
+        </div>
+        <ul class="skill-card__list">
+          
+          <li>iOS / Android shipping</li>
+          
+          <li>Performance profiling</li>
+          
+          <li>Remote Config</li>
+          
+          <li>A/B testing support</li>
+          
+          <li>Crash / analytics instrumentation</li>
+          
+        </ul>
+        <div class="skill-card__tags">
+          
+          <span class="tag tag--skill">Mobile</span>
+          
+          <span class="tag tag--skill">Live Ops</span>
+          
+          <span class="tag tag--skill">Performance</span>
+          
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <i class="fas fa-plug skill-card__icon"></i>
+          <h3 class="skill-card__title">Services / SDKs</h3>
+        </div>
+        <ul class="skill-card__list">
+          
+          <li>Firebase (Crashlytics, Remote Config)</li>
+          
+          <li>Analytics (Amplitude)</li>
+          
+          <li>Ads / monetization (AppLovin)</li>
+          
+          <li>Addressables</li>
+          
+        </ul>
+        <div class="skill-card__tags">
+          
+          <span class="tag tag--skill">Analytics</span>
+          
+          <span class="tag tag--skill">Monetization</span>
+          
+          <span class="tag tag--skill">SDKs</span>
+          
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <i class="fas fa-vr-cardboard skill-card__icon"></i>
+          <h3 class="skill-card__title">XR & Multiplayer</h3>
+        </div>
+        <ul class="skill-card__list">
+          
+          <li>VR: Oculus SDK, SteamVR</li>
+          
+          <li>AR: Vuforia, Google Cardboard</li>
+          
+          <li>Multiplayer: Photon</li>
+          
+        </ul>
+        <div class="skill-card__tags">
+          
+          <span class="tag tag--skill">VR</span>
+          
+          <span class="tag tag--skill">AR</span>
+          
+          <span class="tag tag--skill">Multiplayer</span>
+          
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <i class="fas fa-users skill-card__icon"></i>
+          <h3 class="skill-card__title">Production & Collaboration</h3>
+        </div>
+        <ul class="skill-card__list">
+          
+          <li>Tech leadership (teams up to ~5)</li>
+          
+          <li>Scope / priority management</li>
+          
+          <li>Cross-functional collaboration</li>
+          
+          <li>Git / GitHub workflow</li>
+          
+        </ul>
+        <div class="skill-card__tags">
+          
+          <span class="tag tag--skill">Leadership</span>
+          
+          <span class="tag tag--skill">Management</span>
+          
+          <span class="tag tag--skill">Collaboration</span>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section experience" id="experience">
+  <div class="section__container">
+    <h2 class="section__title">Experience</h2>
+    
+    <div class="timeline">
+      
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__company">Metamoki</h3>
+            <span class="timeline__dates">2023–2025</span>
+          </div>
+          <p class="timeline__role">Senior Unity Engineer</p>
+          <ul class="timeline__bullets">
+            
+            <li>Led gameplay systems development for Adventure Chef mobile game</li>
+            
+            <li>Built scalable live-ops framework for frequent content updates</li>
+            
+            <li>Optimized performance across diverse mobile devices</li>
+            
+            <li>Collaborated closely with design and art teams</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__company">Nvizzio</h3>
+            <span class="timeline__dates">2022–2023</span>
+          </div>
+          <p class="timeline__role">Unity Developer</p>
+          <ul class="timeline__bullets">
+            
+            <li>Developed live-ops events and features for EverMerge</li>
+            
+            <li>Owned end-to-end implementation of Bingo mini-game</li>
+            
+            <li>Supported A/B testing and analytics integration</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__company">Crystal Fountains</h3>
+            <span class="timeline__dates">2020–2021</span>
+          </div>
+          <p class="timeline__role">Unity Graphics Developer</p>
+          <ul class="timeline__bullets">
+            
+            <li>Created real-time graphics and visualization tools</li>
+            
+            <li>Developed custom shaders and rendering pipelines</li>
+            
+            <li>Built interactive fountain control systems</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__company">C.P.L.</h3>
+            <span class="timeline__dates">2019–2020</span>
+          </div>
+          <p class="timeline__role">Senior Unity Developer</p>
+          <ul class="timeline__bullets">
+            
+            <li>Led technical development on Unity projects</li>
+            
+            <li>Mentored junior developers on best practices</li>
+            
+            <li>Architected scalable game systems</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__company">Codesign</h3>
+            <span class="timeline__dates">2017–2020</span>
+          </div>
+          <p class="timeline__role">Unity Lead Developer</p>
+          <ul class="timeline__bullets">
+            
+            <li>Led development team on multiple Unity projects</li>
+            
+            <li>Established coding standards and review processes</li>
+            
+            <li>Shipped AR/VR experiences for enterprise clients</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__company">EON Reality México</h3>
+            <span class="timeline__dates">2016–2017</span>
+          </div>
+          <p class="timeline__role">Unity Developer</p>
+          <ul class="timeline__bullets">
+            
+            <li>Developed VR experiences including TrueDown and Broken Gods</li>
+            
+            <li>Built multiplayer systems with custom hardware integration</li>
+            
+            <li>Created immersive interactions and VFX</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__company">Yeltic</h3>
+            <span class="timeline__dates">—</span>
+          </div>
+          <p class="timeline__role">Unity Developer</p>
+          <ul class="timeline__bullets">
+            
+            <li>Developed Unity applications and prototypes</li>
+            
+            <li>Contributed to project scoping and technical planning</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="section__container">
+    <h2 class="section__title">Get In Touch</h2>
+    
+    <div class="contact__content">
+      <p class="contact__text">
+        Interested in working together or have a question? Feel free to reach out.
+      </p>
+      
+      <div class="contact__email-box">
+        <span class="contact__email" id="contact-email">dano.huesca@gmail.com</span>
+        <button class="btn btn--sm btn--outline contact__copy" id="copy-email" data-email="dano.huesca@gmail.com">
+          <i class="fas fa-copy"></i> Copy
+        </button>
+      </div>
+      
+      <div class="contact__links">
+        <a href="mailto:dano.huesca@gmail.com" class="contact__link">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/luishuesca" class="contact__link" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/danohuescaunity" class="contact__link" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+  
+  <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__content">
+      <span class="footer__logo">Luis Huesca</span>
+      <span class="footer__divider">·</span>
+      <span class="footer__text">Unity / Game Developer</span>
+    </div>
+    <div class="footer__links">
+      <a href="mailto:dano.huesca@gmail.com" class="footer__link" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://linkedin.com/in/luishuesca" class="footer__link" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/danohuescaunity" class="footer__link" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p class="footer__copy">&copy; 2026 Luis Huesca. All rights reserved.</p>
+  </div>
+</footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+  <div class="modal" id="project-modal" aria-hidden="true">
+  <div class="modal__backdrop" data-close-modal></div>
+  <div class="modal__container">
+    <button class="modal__close" data-close-modal aria-label="Close modal">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+
+    <div class="modal__content" id="modal-content">
+      <!-- Content injected by JS -->
+    </div>
+  </div>
+</div>
+
+<script type="text/template" id="modal-template">
+  <div class="modal__media">
+    <video class="modal__video" controls preload="metadata" playsinline>
+      <source src="{video}" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+
+  <div class="modal__body">
+    <div class="modal__header">
+      <h2 class="modal__title">{title}</h2>
+      <p class="modal__meta">
+        <span class="modal__company">{company}</span>
+        <span class="modal__divider">—</span>
+        <span class="modal__role">{role}</span>
+      </p>
+    </div>
+
+    <div class="modal__tags">
+      {platforms}
+      {tech}
+    </div>
+
+    <div class="modal__section">
+      <h3>Overview</h3>
+      <p>{full_desc}</p>
+    </div>
+
+    <div class="modal__section">
+      <h3>Responsibilities</h3>
+      <ul class="modal__list">{responsibilities}</ul>
+    </div>
+
+    <div class="modal__section">
+      <h3>Challenges Solved</h3>
+      <ul class="modal__list">{challenges}</ul>
+    </div>
+  </div>
+</script>
+
+<script>
+  window.projectsData = [
+    
+    {
+      id: "adventure-chef",
+      title: "Adventure Chef",
+      company: "Metamoki",
+      role: "Game Development",
+      short_desc: "Built and shipped gameplay systems and live features in Unity for iOS/Android, focusing on smooth UX, performance, and scalable content updates.",
+      full_desc: "Developed core gameplay mechanics and live-ops features for a mobile cooking adventure game.\nFocused on performance optimization, smooth animations, and scalable content delivery systems.\n",
+      platforms: ["iOS","Android"],
+      tech: ["Unity","C#"],
+      category: "mobile",
+      video: "/assets/projects/adventure-chef/trailer.mp4",
+      thumb: "/assets/projects/adventure-chef/thumb.jpg",
+      screenshots: ["/assets/projects/adventure-chef/screen1.jpg","/assets/projects/adventure-chef/screen2.jpg"],
+      responsibilities: ["Implemented core gameplay systems and UI flows","Built live-ops event framework for content updates","Optimized performance for low-end mobile devices","Collaborated with designers on feature implementation"],
+      challenges: ["Maintaining 60fps on older devices while supporting rich VFX","Building scalable content pipeline for frequent updates"]
+    },
+    
+    {
+      id: "evermerge",
+      title: "EverMerge",
+      company: "Nvizzio",
+      role: "Live Ops / UI / A/B Testing",
+      short_desc: "Worked on live-ops events and feature updates in Unity, improving UI/VFX integration and stability for a large-scale mobile game.",
+      full_desc: "Contributed to live-ops events and feature updates for a successful merge puzzle game.\nEnhanced UI/VFX integration and improved stability across the codebase.\n",
+      platforms: ["iOS","Android"],
+      tech: ["Unity","C#"],
+      category: "mobile",
+      video: "/assets/projects/evermerge/trailer.mp4",
+      thumb: "/assets/projects/evermerge/thumb.jpg",
+      screenshots: ["/assets/projects/evermerge/screen1.jpg","/assets/projects/evermerge/screen2.jpg"],
+      responsibilities: ["Developed live-ops event systems and timed features","Integrated UI animations and VFX polish","Supported A/B testing infrastructure","Fixed bugs and improved codebase stability"],
+      challenges: ["Coordinating updates across a large live player base","Balancing feature velocity with quality"]
+    },
+    
+    {
+      id: "bingo",
+      title: "Bingo",
+      company: "Nvizzio",
+      role: "Live Ops / UI / A/B Testing",
+      short_desc: "Designed and implemented the Bingo mini-game end-to-end in Unity, including gameplay flow, data handling, animations, and VFX.",
+      full_desc: "Owned the full development cycle of a Bingo mini-game feature.\nHandled everything from gameplay logic to data integration, animations, and visual effects.\n",
+      platforms: ["iOS","Android"],
+      tech: ["Unity","C#"],
+      category: "mobile",
+      video: "/assets/projects/bingo/trailer.mp4",
+      thumb: "/assets/projects/bingo/thumb.jpg",
+      screenshots: ["/assets/projects/bingo/screen1.jpg","/assets/projects/bingo/screen2.jpg"],
+      responsibilities: ["Designed and implemented complete mini-game from scratch","Built data handling and state management systems","Created animations and integrated VFX","Coordinated with QA for thorough testing"],
+      challenges: ["Fitting complex feature within tight production timeline","Ensuring smooth integration with existing game systems"]
+    },
+    
+    {
+      id: "truedown",
+      title: "TrueDown",
+      company: "Eon Reality",
+      role: "VR Experience",
+      short_desc: "Developed VR interactions, animations, and VFX for a story-driven horror experience, helping shape scope and technical decisions during production.",
+      full_desc: "Created immersive VR interactions for a narrative horror experience.\nContributed to technical direction and scope management throughout development.\n",
+      platforms: ["Oculus","SteamVR"],
+      tech: ["Unity","C#"],
+      category: "vr",
+      video: "/assets/projects/truedown/trailer.mp4",
+      thumb: "/assets/projects/truedown/thumb.jpg",
+      screenshots: ["/assets/projects/truedown/screen1.jpg","/assets/projects/truedown/screen2.jpg"],
+      responsibilities: ["Developed VR interaction systems and mechanics","Created atmospheric animations and VFX","Helped define technical scope and priorities","Optimized for VR performance requirements"],
+      challenges: ["Maintaining immersion while hitting VR frame targets","Designing intuitive interactions for horror context"]
+    },
+    
+    {
+      id: "broken-gods",
+      title: "Broken Gods",
+      company: "Eon Reality",
+      role: "VR Game / Multiplayer / Online",
+      short_desc: "Built core gameplay and multiplayer features for a VR shooter with custom hardware (treadmill + rifles), while managing scope and priorities with the team.",
+      full_desc: "Developed gameplay and networking systems for a VR arena shooter using custom locomotion hardware.\nCoordinated with team on scope management and technical decision-making.\n",
+      platforms: ["Oculus","SteamVR"],
+      tech: ["Unity","C#"],
+      category: "vr",
+      video: "/assets/projects/broken-gods/trailer.mp4",
+      thumb: "/assets/projects/broken-gods/thumb.jpg",
+      screenshots: ["/assets/projects/broken-gods/screen1.jpg","/assets/projects/broken-gods/screen2.jpg"],
+      responsibilities: ["Built core gameplay mechanics and weapon systems","Implemented multiplayer networking with Photon","Integrated custom hardware (treadmill, rifle controllers)","Managed technical scope with production team"],
+      challenges: ["Syncing custom hardware input with networked gameplay","Balancing competitive multiplayer in VR"]
+    }
+    
+  ];
+</script>
+  
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
