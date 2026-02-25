@@ -450,10 +450,19 @@ em {
   color: var(--color-text-dim);
   transition: color var(--transition-fast);
   animation: bounce 2s infinite;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .hero__scroll-link:hover {
   color: var(--color-accent);
+}
+
+.hero__scroll-link span,
+.hero__scroll-link i{
+  color: inherit;
 }
 
 /* --------------------------------------------------------------------------
