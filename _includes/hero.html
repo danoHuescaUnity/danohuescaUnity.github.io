@@ -20,7 +20,11 @@
       </div>
 
       <div class="hero__ctas">
-        <a class="btn btn--primary" href="{{ '/assets/resume/Luis_Huesca_Resume26.pdf' | relative_url }}" download>
+        <a
+          class="btn btn--primary"
+          href="{{ '/assets/resume/Luis_Huesca_Resume26.pdf' | relative_url }}"
+          download
+        >
           <i class="fas fa-download" aria-hidden="true"></i>
           <span>Download CV</span>
         </a>
@@ -34,8 +38,22 @@
 
     <div class="hero__visual" aria-hidden="true">
       <div class="hero__glow"></div>
-      <div class="hero__shape">
-        <i class="fas fa-gamepad" aria-hidden="true"></i>
+
+      <div class="hero__visual-grid">
+        <div class="hero__photo-tile">
+          <img
+            class="hero__photo"
+            src="{{ '/assets/img/profile.png' | relative_url }}"
+            alt="Luis Huesca portrait"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="hero__photo-ring" aria-hidden="true"></span>
+
+          <div class="hero__logo-tile" aria-hidden="true">
+            <i class="fas fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -168,11 +168,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // -----------------------------
+  // "View Projects" hero CTA (smooth scroll)
+  // -----------------------------
+  const viewProjectsBtn = document.querySelector('[data-testid="view-projects-btn"]');
+  if (viewProjectsBtn) {
+    viewProjectsBtn.addEventListener("click", () => {
+      document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  // -----------------------------
   // Navbar scroll spy (stable + contact fix + hero clears)
   // -----------------------------
-  const navLinks = Array.from(
-    document.querySelectorAll(".navbar__link[data-section]")
-  );
+  const navLinks = Array.from(document.querySelectorAll(".navbar__link[data-section]"));
 
   const getSectionIdFromLink = (a) => {
     const ds = a.getAttribute("data-section");
@@ -182,9 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const sectionIds = navLinks.map(getSectionIdFromLink).filter(Boolean);
-  const sections = sectionIds
-    .map((id) => document.getElementById(id))
-    .filter(Boolean);
+  const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
 
   const setActive = (id) => {
     navLinks.forEach((a) => a.classList.remove("active"));
@@ -197,9 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const navHeight = () => {
-    const css = getComputedStyle(document.documentElement).getPropertyValue(
-      "--nav-height"
-    );
+    const css = getComputedStyle(document.documentElement).getPropertyValue("--nav-height");
     const n = parseInt(css, 10);
     return Number.isFinite(n) ? n : 70;
   };
@@ -218,8 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Near bottom -> force Contact
     const nearBottom =
-      window.innerHeight + window.scrollY >=
-      document.documentElement.scrollHeight - 4;
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
 
     if (nearBottom) {
       setActive(sections[sections.length - 1].id);
